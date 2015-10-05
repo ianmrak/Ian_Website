@@ -2,37 +2,37 @@
 <html>
 <head>
   <link rel="stylesheet" type="text/css" href="styles.css">
+  <title>Ian Mrak</title>
 </head>
-<nav>
-  <ul>
-    <li><a href="index.html#">Home</a></li>
-    <li><a href="aboutme.html#">About Me</a></li>
-    <li><a href="resume.html#">Resume</a></li>
-    <li><a href="#">Animation</a>
-      <ul>
-        <li id="demo_reel"><a href="demo_reel.html#">Demo Reel</a></li>
-        <li id="firefly"><a href="firefly.html#">Firefly</a></li>
-        <li id="other"><a href="other.html#">Other</a></li>
-      </ul>
-    </li>
-    <li><a href="#">Modeling</a></li>
-    <li><a href="#">Illustration</a></li>
+<body ng-app="mySite">
+  <nav>
+    <ul>
+      <li><a href="index.html#">Home</a></li>
+      <li><a href="aboutme.html#">About Me</a></li>
+      <li><a href="resume.html#">Resume</a></li>
+      <li><a href="#">Animation</a>
+        <ul>
+          <li id="demo_reel"><a href="demo_reel.html#">Demo Reel</a></li>
+          <li id="firefly"><a href="firefly.html#">Firefly</a></li>
+          <li id="other"><a href="other.html#">Other</a></li>
+        </ul>
+      </li>
+      <li><a href="modeling.html#">Modeling</a></li>
+      <li><a href="illustration.html#">Illustration</a></li>
 
-  </ul>
-</nav>
-<body>
-  <div class="content-wrapper">
+    </ul>
+  </nav>  <div class="content-wrapper">
   <div class="video-parent">
   <div id="title">
     <p>Ian Mrak</p>
     <p>Art and Animation</p>
-    <video controls>
-      <source src="elements/Mrak_Demo_Reel.mp4#">
+    <video class="full-vid" controls>
+      <source src="https://ianmrak.graphics/wp-content/uploads/2015/10/10_Second_Reel.mp4#">
     </video>
   </div>
   </div>
+</div>
   <script src="scripts.js"></script>
-</body>
   <footer>
   <div id="bottom-bar">
     <p>&copy; 2015 Ian Mrak</p>
@@ -42,4 +42,6 @@
   </div>
   </div>
 </footer>
+</body>
+
 </html>
