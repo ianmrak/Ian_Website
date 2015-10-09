@@ -55,10 +55,14 @@ body {
   padding-top: 6em;
 }
 /*--------Nav bar starts here---------*/
+/*@media screen and (min-width: 1000px) {
+  nav
+}*/
 nav {
   z-index: 20;
   margin: auto;
   width: 100%;
+  min-width: 1000px;
   position: fixed;
   top: 0px;
 }
@@ -71,6 +75,12 @@ nav ul li:hover > ul {
 }
 nav > ul {
   border-bottom: 1px solid rgba(0, 0, 0, .9);
+}
+nav > ul > li {
+  float: right;
+}
+nav > ul > li:first-child {
+  float: left;
 }
 nav ul {
 	background: rgba(0, 0, 0, .8);
@@ -109,17 +119,21 @@ nav ul:after {
   display: block;
 }
 nav ul li {
-  float: left;
   border-right: .1em solid rgba(0, 0, 0, 0.2);
 }
 nav ul li:hover {
   z-index: 10;
   position: relative;
-	background: #4b545f;
-	background: linear-gradient(right, rgba(255, 255, 255, .1), rgba(230, 230, 230, .1));;
+	background: rgba(75, 84, 95, .2);
+	/*background: linear-gradient(right, rgba(255, 255, 255, .1), rgba(230, 230, 230, .1));;
 	background: -moz-linear-gradient(right, rgba(255, 255, 255, .1), rgba(230, 230, 230, .1));
-	background: -webkit-linear-gradient(left, rgba(255, 255, 255, .1), rgba(230, 230, 230, .1));
+	background: -webkit-linear-gradient(left, rgba(255, 255, 255, .1), rgba(230, 230, 230, .1));*/
+  transition: background .15s ease-in-out;
 }
+nav ul li.current {
+  background-color: rgba(75, 84, 95, .5);
+}
+
 nav ul li:hover a {
 	color: #fff;
 }
@@ -407,6 +421,7 @@ nav ul ul li a:active {
 .full-vid {
   max-height: 720px;
   max-width: 95vw;
+  min-height: 540px;
 }
 .list-vid {
   max-height: 360px;
@@ -427,6 +442,8 @@ nav ul ul li a:active {
  float: left;
  height: 20em;
  width: 20%;
+ min-width: 20em;
+ max-width: 25em;
  border-right: 1px solid rgba(128, 128, 128, .7);
  border-bottom: 1px solid rgba(128, 128, 128, .7);
  box-sizing: border-box;

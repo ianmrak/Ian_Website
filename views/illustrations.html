@@ -1,0 +1,6 @@
+<div class="list-image">
+  <div class="picture-list" ng-repeat="item in items">
+    <a ng-click="lightbox_trigger($event)" ng-href="{{ item.link }}" class="lightbox_trigger">
+    <img class="list-pic" ng-src="{{ item.link }}"></a>
+  </div>
+</div>

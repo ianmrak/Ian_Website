@@ -1,0 +1,13 @@
+/*@media only screen and (max-width: 1000px) {
+  nav {
+    min-height: 1em;
+  }
+nav > ul {
+  position: absolute;
+  top: -80px;
+}
+  nav:hover > ul {
+    top: 0;
+    transition: top .2s ease;
+  }
+}*/
