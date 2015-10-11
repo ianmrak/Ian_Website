@@ -9,6 +9,7 @@ html {
 body {
   background: linear-gradient(#536E8A, gray);
 }
+
 #title {
   margin: auto;
   background: rgba(0, 0, 0, .4);
@@ -98,7 +99,7 @@ nav ul {
   text-align: right;
 	position: relative;
 	display: inline-block;
-  font-family: Lovelo, sans-serif; font-size: 18px; line-height: 24px;
+  font-family: Lovelo, sans-serif; font-size: 16px; line-height: 24px;
 }
 nav ul li a {
   text-decoration: none;

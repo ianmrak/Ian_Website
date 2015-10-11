@@ -10,6 +10,13 @@ app.config(function ($routeProvider) {
       controller: 'IllustrationsController',
       templateUrl: 'views/illustrations.html'
     })
+    .when('/modeling', {
+      controller: 'ModelingController',
+      templateUrl: 'views/modeling.html'
+    })
+    .when('/aboutme', {
+      templateUrl: 'views/aboutme.html'
+    })
     .otherwise({
       redirectTo: '/'
     });
