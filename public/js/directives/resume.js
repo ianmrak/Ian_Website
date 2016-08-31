@@ -1,4 +1,6 @@
-app.directive('resume', function() {
+angular.module('App.ResumeDirective', [])
+
+.directive('resume', function() {
   return {
     restrict: 'E',
     scope: {

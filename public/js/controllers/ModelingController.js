@@ -1,4 +1,6 @@
-app.controller('ModelingController', ['$scope', 'ModelingService', function($scope, modeling) {
+angular.module('App.ModelingController', [])
+
+.controller('ModelingController', ['$scope', 'ModelingService', function($scope, modeling) {
   $scope.items = modeling;
 
   $('#lightbox').live('click', function() { //must use live, as the lightbox element is inserted into the DOM

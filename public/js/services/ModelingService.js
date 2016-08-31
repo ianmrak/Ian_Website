@@ -1,4 +1,6 @@
-app.service('ModelingService', function() {
+angular.module('App.ModelingService', [])
+
+.service('ModelingService', function() {
   return [{
     isVideo: true,
     link: 'https://ianmrak.graphics/wp-content/uploads/2015/10/Thorncrown.mp4',
