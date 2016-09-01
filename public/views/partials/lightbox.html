@@ -1,0 +1,11 @@
+<div ng-if="lightbox.activeItem" portfolio-ctrls>
+  <div class="lightbox-background" ng-click="resetActiveItem()">
+  </div>
+  <div class="lightbox-container">
+    <div class="lightbox-btn prev-btn" ng-click="nextItem(-1)"> << </div>
+    <div class="lightbox">
+      <img ng-src="{{ lightbox.activeItem.link }}"/>
+    </div>
+    <div class="lightbox-btn next-btn" ng-click="nextItem(1)"> >> </div>
+  </div>
+</div>

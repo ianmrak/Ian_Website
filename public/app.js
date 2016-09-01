@@ -1,14 +1,25 @@
 angular.module("mySite",
 [
   'ui.router',
-  'App.IllustrationsController',
+  // Controllers
+  'App.IllustrationController',
+  'App.ProjectController',
   'App.ModelingController',
   'App.ResumeController',
-  'App.ResumeDirective',
-  'App.IllustrationsService',
+  'App.ActiveItemController',
+  // Services
+  'App.IllustrationService',
+  'App.ProjectService',
   'App.ModelingService',
-  'App.Navbar',
-  'App.Footer'
+  'App.PortfolioService',
+  // Elements
+  'App.ResumeElement',
+  'App.LightboxElement',
+  'App.BioElement',
+  'App.NavbarElement',
+  'App.FooterElement',
+  // Attributes
+  'App.PortfolioAttribute',
 ])
 
 .config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
@@ -17,14 +28,9 @@ angular.module("mySite",
     .state('home', {
       url: ''
     })
-    .state('resume', {
-      url: '/resume',
-      controller: 'ResumeController',
-      templateUrl: 'views/resume.html'
-    })
     .state('illustrations', {
       url: '/illustrations',
-      controller: 'IllustrationsController',
+      controller: 'IllustrationController',
       templateUrl: 'views/illustrations.html'
     })
     .state('modeling', {
@@ -32,8 +38,13 @@ angular.module("mySite",
       controller: 'ModelingController',
       templateUrl: 'views/modeling.html'
     })
-    .state('aboutme', {
-      url: '/aboutme',
-      templateUrl: 'views/aboutme.html'
+    .state('projects', {
+      url: '/projects',
+      controller: 'ProjectController',
+      templateUrl: 'views/projects.html'
+    })
+    .state('about', {
+      url: '/about',
+      templateUrl: 'views/about.html'
     })
 }]);

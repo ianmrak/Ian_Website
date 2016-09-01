@@ -1,8 +1,8 @@
-angular.module('App.IllustrationsService', [])
+angular.module('App.IllustrationService', [])
 
-.service('IllustrationsService', function() {
+.service('IllustrationService', function() {
   return [{
-    link: 'https://ianmrak.graphics/wp-content/uploads/2015/05/spirit_concept_2.jpg'
+    link: '../../assets/bio.jpg'
   }, {
     link: 'https://ianmrak.graphics/wp-content/uploads/2015/01/Characterlineupbordered.png'
   }, {

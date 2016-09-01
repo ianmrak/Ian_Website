@@ -7,6 +7,7 @@
 <body>
   <div id="main-content">
     <navigation></navigation>
+    <lightbox></lightbox>
 
     <div class="content-wrapper">
       <div ui-view></div>
@@ -22,18 +23,26 @@
 
   <script src="app.js"></script>
   <!-- Services -->
-  <script src="js/services/IllustrationsService.js"></script>
+  <script src="js/services/IllustrationService.js"></script>
   <script src="js/services/ModelingService.js"></script>
+  <script src="js/services/PortfolioService.js"></script>
+  <script src="js/services/ProjectService.js"></script>
   <!-- Controllers -->
-  <script src="js/controllers/ModelingController.js"></script>
   <script src="js/controllers/ResumeController.js"></script>
-  <script src="js/controllers/IllustrationsController.js"></script>
+  <script src="js/controllers/ActiveItemController.js"></script>
+  <script src="js/controllers/ModelingController.js"></script>
+  <script src="js/controllers/IllustrationController.js"></script>
+  <script src="js/controllers/ProjectController.js"></script>
   <!-- Directives -->
-  <script src="js/directives/Resume.js"></script>
-  <script src="js/directives/NavbarElement.js"></script>
-  <script src="js/directives/FooterElement.js"></script>
+  <!-- D - attributes -->
+  <script src="js/directives/attributes/Portfolio.js"></script>
+  <!-- D - elements -->
+  <script src="js/directives/elements/Resume.js"></script>
+  <script src="js/directives/elements/Bio.js"></script>
+  <script src="js/directives/elements/Lightbox.js"></script>
+  <script src="js/directives/elements/Navbar.js"></script>
+  <script src="js/directives/elements/Footer.js"></script>
 
-  <script src="js/scripts.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,15 @@
+#project-wrapper {
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+  h1 {
+    text-align: center;
+  }
+}
+
+.project-list {
+  display: flex;
+  flex-direction: column;
+  &:first-child {
+    margin: 0;
+  }
+}

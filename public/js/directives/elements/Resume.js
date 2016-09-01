@@ -1,4 +1,4 @@
-angular.module('App.ResumeDirective', [])
+angular.module('App.ResumeElement', [])
 
 .directive('resume', function() {
   return {
@@ -6,6 +6,6 @@ angular.module('App.ResumeDirective', [])
     scope: {
       info: '='
     },
-    templateUrl: 'js/directives/resume.html'
+    templateUrl: 'views/partials/resume_full.html'
   };
 });

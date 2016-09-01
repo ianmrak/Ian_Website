@@ -1,4 +1,3 @@
-/*---------Portfolio Layout---------*/
 #firefly-body {
   background: linear-gradient(#29293D, #08080C);
 }
@@ -57,7 +56,9 @@
   padding-bottom: .5em;
 }
 .list-image {
-  float: left;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   background-color: rgba(5, 5, 5, .5);
   border-top: 1px solid #181818;
   border-bottom: 1px solid #181818;

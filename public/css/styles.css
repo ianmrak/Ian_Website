@@ -13,20 +13,23 @@ body {
   margin-bottom: 1.5em;
   padding-top: 6em; }
 
+#about {
+  display: flex; }
+
+.bio-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  background-color: rgba(255, 255, 255, 0.6); }
+  .bio-wrapper h2 {
+    padding-bottom: 5px; }
+
 .aboutme {
   font-size: 18px;
-  padding-bottom: 10px;
-  margin-left: 13em; }
-
-.body_column {
-  width: 50em;
-  margin: auto;
-  border: 1px solid gray;
-  background-color: rgba(255, 255, 255, 0.6);
-  padding: 10px; }
-
-.body_column h2 {
-  padding-bottom: 5px; }
+  padding-bottom: 10px; }
 
 #profile {
   margin-right: 10px;
@@ -35,11 +38,11 @@ body {
 #card {
   border: 1px solid black; }
 
-.wrapper {
+.resume-wrapper {
   border: 1px solid gray;
-  margin: auto;
-  width: 50em;
-  padding-right: 1em; }
+  padding: 20px; }
+  .resume-wrapper hr {
+    margin: .5em 0; }
 
 #resume_header {
   z-index: 5;
@@ -49,7 +52,8 @@ body {
   background-color: rgba(255, 255, 255, 0.7);
   margin-bottom: 8px;
   padding-left: 1em;
-  margin: auto; }
+  margin: auto;
+  box-sizing: border-box; }
 
 #resume_name {
   float: left;
@@ -75,26 +79,23 @@ body {
   margin: auto;
   width: 50em;
   height: 850px;
-  background-color: rgba(255, 255, 255, 0.6); }
-
-#resume_body h3 {
-  text-decoration: underline;
-  margin-left: 5px;
-  margin-bottom: .6em;
-  margin-top: .6em; }
-
-#resume_body p {
-  font-family: Garamond, serif;
-  margin-left: 10px;
-  margin-right: 5px;
-  margin-top: 10px; }
-
-#resume_body li {
-  list-style-position: inside;
-  list-style-type: disc; }
-
-#resume_body ul {
-  margin-left: 20px; }
+  background-color: rgba(255, 255, 255, 0.6);
+  box-sizing: border-box; }
+  #resume_body h3 {
+    text-decoration: underline;
+    margin-left: 5px;
+    margin-bottom: .6em;
+    margin-top: .6em; }
+  #resume_body p {
+    font-family: Garamond, serif;
+    margin-left: 10px;
+    margin-right: 5px;
+    margin-top: 10px; }
+  #resume_body li {
+    list-style-position: inside;
+    list-style-type: disc; }
+  #resume_body ul {
+    margin-left: 20px; }
 
 #footer {
   border-radius: 0px;
@@ -103,16 +104,59 @@ body {
   clear: both;
   background-color: rgba(255, 255, 255, 0.7);
   text-align: center;
-  padding-left: 1em;
   margin: auto;
-  margin-bottom: 0em; }
+  margin-bottom: 0em;
+  box-sizing: border-box; }
+  #footer p {
+    font-family: Helvetica, sans-serif;
+    font-size: 18px;
+    position: relative;
+    padding-top: 1.2em;
+    color: #232323;
+    box-sizing: border-box; }
 
-#footer p {
+#project-wrapper {
   font-family: Helvetica, sans-serif;
-  font-size: 18px;
-  position: relative;
-  padding-top: 1.2em;
-  color: #232323; }
+  font-size: 14px; }
+  #project-wrapper h1 {
+    text-align: center; }
+
+.project-list {
+  display: flex;
+  flex-direction: column; }
+  .project-list:first-child {
+    margin: 0; }
+
+.project {
+  border: 1px solid gray;
+  width: 80%;
+  margin: 5px auto;
+  box-sizing: border-box; }
+  .project:hover {
+    background-color: #f2f2f2; }
+
+.project-link {
+  text-decoration: none;
+  color: black; }
+
+.project-info {
+  display: flex;
+  flex-direction: column;
+  padding: 5px; }
+  .project-info ul {
+    padding-left: 1em; }
+
+.project-name {
+  border-bottom: 1px solid gray;
+  padding: 5px; }
+
+.project-description {
+  font-style: italic; }
+
+.project-contribution {
+  list-style-type: none; }
+  .project-contribution:before {
+    content: '- '; }
 
 #demo_reel {
   background: url("https://ianmrak.graphics/wp-content/uploads/2015/09/creature_stand.jpg");
@@ -121,7 +165,7 @@ body {
 #demo_reel > a {
   color: #E6E6E6;
   font-family: Lovelo, sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 2em;
   text-shadow: -.3px 0 #333329, 0 .3px #333329, .3px 0 #333329, 0 -.3px #333329; }
 
@@ -129,9 +173,6 @@ body {
   background: #FFFFB2;
   background: rgba(255, 255, 255, 0.2);
   color: #FFFFDF;
-  font-family: Lovelo, sans-serif;
-  font-size: 16px;
-  line-height: 2em;
   text-shadow: -.3px 0 #333329, 0 .3px #333329, .3px 0 #333329, 0 -.3px #333329; }
 
 .shot-breakdowns {
@@ -176,7 +217,7 @@ body {
 #firefly > a {
   color: #E6E6E6;
   font-family: Lovelo, sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 2em;
   text-shadow: -.3px 0 #333329, 0 .3px #333329, .3px 0 #333329, 0 -.3px #333329; }
 
@@ -184,9 +225,6 @@ body {
   background: #FFFFB2;
   background: rgba(255, 255, 255, 0.2);
   color: #FFFFDF;
-  font-family: Lovelo, sans-serif;
-  font-size: 16px;
-  line-height: 2em;
   text-shadow: -.3px 0 #333329, 0 .3px #333329, .3px 0 #333329, 0 -.3px #333329; }
 
 #firefly-abstract {
@@ -230,7 +268,7 @@ body {
 #other > a {
   color: #E6E6E6;
   font-family: Lovelo, sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 2em;
   text-shadow: -.3px 0 #333329, 0 .3px #333329, .3px 0 #333329, 0 -.3px #333329; }
 
@@ -238,12 +276,8 @@ body {
   background: #FFFFB2;
   background: rgba(255, 255, 255, 0.2);
   color: #FFFFDF;
-  font-family: Lovelo, sans-serif;
-  font-size: 16px;
-  line-height: 2em;
   text-shadow: -.3px 0 #333329, 0 .3px #333329, .3px 0 #333329, 0 -.3px #333329; }
 
-/*---------Portfolio Layout---------*/
 #firefly-body {
   background: linear-gradient(#29293D, #08080C); }
 
@@ -302,13 +336,70 @@ body {
   padding-bottom: .5em; }
 
 .list-image {
-  float: left;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   background-color: rgba(5, 5, 5, 0.5);
   border-top: 1px solid #181818;
   border-bottom: 1px solid #181818;
   box-shadow: 5px 5px 16px 1px rgba(0, 0, 0, 0.55); }
 
-#lightbox {
+.lightbox-background {
+  position: fixed;
+  /* keeps the lightbox window in the current viewport */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8) repeat;
+  text-align: center;
+  z-index: 999; }
+
+.lightbox-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  z-index: 1000; }
+
+.lightbox {
+  max-height: 50em;
+  min-width: 70%; }
+  .lightbox img {
+    max-width: 100%;
+    box-shadow: 0 0 25px #111;
+    -webkit-box-shadow: 0 0 25px #111;
+    -moz-box-shadow: 0 0 25px #111; }
+  .lightbox p {
+    text-align: right;
+    color: #fff;
+    margin-right: 20px;
+    font-size: 12px; }
+
+.lightbox-btn {
+  position: absolute;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  padding: 15px;
+  border-radius: 100%; }
+  .lightbox-btn:hover {
+    background-color: #f3f3f5; }
+
+.prev-btn {
+  left: -4em; }
+
+.next-btn {
+  right: -4em; }
+
+.lightbox-vid {
   position: fixed;
   /* keeps the lightbox window in the current viewport */
   top: 0;
@@ -318,13 +409,7 @@ body {
   background: rgba(0, 0, 0, 0.8) repeat;
   text-align: center; }
 
-#lightbox p {
-  text-align: right;
-  color: #fff;
-  margin-right: 20px;
-  font-size: 12px; }
-
-#lightbox img {
+.lightbox-vid a {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -335,125 +420,107 @@ body {
   max-height: 50em;
   max-width: 70%; }
 
-#lightbox-vid {
-  position: fixed;
-  /* keeps the lightbox window in the current viewport */
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.8) repeat;
-  text-align: center; }
-
-#lightbox-vid a {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  box-shadow: 0 0 25px #111;
-  -webkit-box-shadow: 0 0 25px #111;
-  -moz-box-shadow: 0 0 25px #111;
-  max-height: 50em;
-  max-width: 70%; }
-
-nav {
+.navbar {
   z-index: 20;
   margin: auto;
   width: 100%;
-  min-width: 1000px;
+  min-width: 870px;
   position: fixed;
   top: 0px; }
 
-nav ul ul {
+.navbar ul ul {
   display: none; }
 
-nav ul li:hover > ul {
+.navbarbar ul li:hover > ul {
   text-align: left;
   display: block; }
 
-nav > ul {
+.navbar > ul {
   border-bottom: 1px solid rgba(0, 0, 0, 0.9); }
 
-nav > ul > li {
+.navbar > ul > li {
   float: right; }
 
-nav > ul > li:first-child {
-  float: left; }
+.navbar > ul > li:first-child {
+  float: left;
+  border-left: 0.1em solid rgba(0, 0, 0, 0.2); }
 
-nav ul {
+.navbar > ul > li:last-child {
+  border-left: 0.1em solid rgba(0, 0, 0, 0.2); }
+
+.navbar ul {
   background: rgba(0, 0, 0, 0.8);
   box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.15);
   padding-left: 10px;
-  border-radius: 3px;
   width: 100%;
   list-style: none;
   text-align: right;
   position: relative;
   display: inline-block;
   font-family: Lovelo, sans-serif;
-  font-size: 16px;
   line-height: 24px; }
 
-nav ul li a {
+.navbar ul li a {
   text-decoration: none;
   color: #E6E6E6;
   display: block;
-  padding: 0px 30px;
-  height: 4em;
-  line-height: 4em; }
+  padding: 0px 25px;
+  font-size: 14px;
+  height: 3em;
+  line-height: 3em; }
 
-nav ul li ul li a {
+.navbar ul li ul li a {
   vertical-align: middle;
   height: 2em;
   transition: background .15s ease-in-out; }
 
-nav ul:after {
+.navbar ul:after {
   content: "";
   clear: both;
   display: block; }
 
-nav ul li {
+.navbar ul li {
   border-right: 0.1em solid rgba(0, 0, 0, 0.2); }
 
-nav ul li:hover {
+.navbar ul li:hover {
   z-index: 10;
   position: relative;
   background: rgba(75, 84, 95, 0.2);
   transition: background .15s ease-in-out; }
 
-nav ul li.current {
+.navbar ul li.current {
   background-color: rgba(75, 84, 95, 0.5); }
 
-nav ul li:hover a {
+.navbar ul li:hover a {
   color: #fff; }
 
-nav ul ul {
+.navbar ul ul {
   background: #5f6975;
   border-radius: 0px;
   padding: 0;
   position: absolute;
   top: 100%; }
 
-nav ul ul li {
+.navbar ul ul li {
   float: none;
   border-top: 0px solid rgba(0, 0, 0, 0.8);
   border-bottom: 1px solid rgba(0, 0, 0, 0.8);
   border-right: 0px solid transparent;
   position: relative; }
 
-nav ul ul li a {
+.navbar ul ul li a {
   padding: 1em 20px;
   color: #fff; }
 
-nav ul ul li a:hover {
+.navbar ul ul li a:hover {
   background: #4b545f; }
 
-nav ul ul ul {
+.navbar ul ul ul {
   position: absolute;
   left: 100%;
   top: 0; }
 
-nav ul ul li a:active {
+.navbar ul ul li a:active {
   box-shadow: inset 1px 1px 7px 2px #121212; }
 
 #bottom-bar {
@@ -463,7 +530,7 @@ nav ul ul li a:active {
   position: fixed;
   bottom: 0;
   font-family: Helvetica, sans-serif;
-  font-size: 15px;
+  font-size: 12px;
   color: #B8B8B8;
   border-top: 1px solid #181818; }
 

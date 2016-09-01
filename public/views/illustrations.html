@@ -1,6 +1,7 @@
-<div class="list-image">
+<div class="list-image" portfolio-ctrls>
   <div class="picture-list" ng-repeat="item in items">
-    <a ng-click="lightbox_trigger($event)" ng-href="{{ item.link }}" class="lightbox_trigger">
-    <img class="list-pic" ng-src="{{ item.link }}"></a>
+    <a ng-click="setActiveItem($event, item, $index)" ng-href="{{ item.link }}" class="lightbox_trigger">
+      <img class="list-pic" ng-src="{{ item.link }}" index="{{ $index }}">
+    </a>
   </div>
 </div>

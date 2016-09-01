@@ -1,4 +1,4 @@
-angular.module('App.Footer', [])
+angular.module('App.FooterElement', [])
 
 .directive('footer', function() {
   return {
