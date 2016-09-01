@@ -1,0 +1,81 @@
+.wrapper {
+   box-shadow: 5px 5px 16px 1px #1A1A1A;
+   margin: auto;
+   width: 50em;
+   padding-right: 1em;
+}
+ #resume_header {
+   z-index: 5;
+   position: relative;
+   width: 50em;
+   height: 3.7em;
+   background-color: rgba(255, 255, 255, .7);
+   margin-bottom: 8px;
+   padding-left: 1em;
+   margin: auto;
+ }
+#resume_name {
+  float: left;
+  margin-left: 15px;
+  padding-top: .5em;
+  font-size: 26px;
+  font-family: Helvetica, sans-serif;
+  color: #232323;
+}
+#resume_email {
+	float:right;
+	margin-right: 20px;
+	padding-top: .8em;
+	font-size: 20px;
+	font-family: Helvetica, sans-serif;
+	color: #232323;
+}
+#resume_body {
+	position: relative;
+  padding-top: .3em;
+  padding-left: 1em;
+  padding-bottom: .3em;
+  margin: auto;
+	width: 50em;
+	height: 850px;
+	background-color: rgba(255, 255, 255, .6);
+}
+#resume_body h3 {
+  text-decoration: underline;
+  margin-left: 5px;
+  margin-bottom: .6em;
+  margin-top: .6em;
+}
+#resume_body p {
+  font-family: Garamond, serif;
+  margin-left: 10px;
+  margin-right: 5px;
+  margin-top: 10px;
+}
+
+#resume_body li {
+  list-style-position: inside;
+  list-style-type: disc;
+}
+
+#resume_body ul {
+  margin-left: 20px;
+}
+ #footer {
+   border-radius: 0px;
+   height: 4em;
+   width: 50em;
+   clear: both;
+   background-color: rgba(255, 255, 255, .7);
+   text-align: center;
+   padding-left: 1em;
+   margin: auto;
+   margin-bottom: 0em;
+ }
+#footer p {
+  font-family: Helvetica, sans-serif;
+  font-size: 18px;
+  position: relative;
+  padding-top: 1.2em;
+  color: #232323;
+}

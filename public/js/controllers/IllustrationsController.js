@@ -3,9 +3,9 @@ angular.module('App.IllustrationsController', [])
 .controller('IllustrationsController', ['$scope', 'IllustrationsService', function($scope, illustrations) {
   $scope.items = illustrations;
 
-  $('#lightbox').live('click', function() { //must use live, as the lightbox element is inserted into the DOM
- 		$('#lightbox').hide();
- 	});
+  // $('#lightbox').live('click', function() { //must use live, as the lightbox element is inserted into the DOM
+ // 		$('#lightbox').hide();
+ // 	});
 
   $scope.lightbox_trigger = function(e) {
  		//prevent default action (hyperlink)

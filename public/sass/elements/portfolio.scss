@@ -1,0 +1,65 @@
+/*---------Portfolio Layout---------*/
+#firefly-body {
+  background: linear-gradient(#29293D, #08080C);
+}
+#demo-body {
+  background: linear-gradient(#536E8A, gray);
+}
+.video {
+  background-color:  rgba(0, 0, 0, .7);
+  margin: auto;
+  padding: .5em;
+  border-radius: 7px;
+  display: inline-block;
+  box-shadow: 5px 5px 16px 1px rgba(0, 0, 0, .55);
+}
+.full-vid {
+  max-height: 720px;
+  max-width: 95vw;
+  min-height: 540px;
+}
+.list-vid {
+  max-height: 360px;
+  max-width: 95vw;
+}
+.list-pic {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  padding-top: 0em;
+}
+.animation-list {
+  margin: auto;
+  padding: .1em;
+  display: inline-block;
+}
+.picture-list {
+ float: left;
+ height: 20em;
+ width: 20%;
+ min-width: 20em;
+ max-width: 25em;
+ border-right: 1px solid rgba(128, 128, 128, .7);
+ border-bottom: 1px solid rgba(128, 128, 128, .7);
+ box-sizing: border-box;
+}
+.video-parent {
+  display: flex;
+  padding-bottom: 2em;
+}
+.list-video {
+  text-align: center;
+  background-color: rgba(5, 5, 5, .5);
+  border-top: 2px solid #181818;
+  border-bottom: 2px solid #181818;
+  box-shadow: 5px 5px 16px 1px rgba(0, 0, 0, .55);
+  margin-bottom: 2em;
+  padding-bottom: .5em;
+}
+.list-image {
+  float: left;
+  background-color: rgba(5, 5, 5, .5);
+  border-top: 1px solid #181818;
+  border-bottom: 1px solid #181818;
+  box-shadow: 5px 5px 16px 1px rgba(0, 0, 0, .55);
+}

@@ -1,36 +1,148 @@
 * {
   margin: 0;
-  padding: 0;
-}
-html {
- min-height: 100%;
- padding-bottom: 3em;
-}
-body {
-  background: linear-gradient(#536E8A, gray);
-}
+  padding: 0; }
 
-#title {
+html {
+  min-height: 100%;
+  padding-bottom: 3em; }
+
+body {
+  background: white; }
+
+
+.aboutme {
+  font-size: 18px;
+  padding-bottom: 10px;
+  margin-left: 13em; }
+
+.body_column {
+  width: 50em;
   margin: auto;
-  background: rgba(0, 0, 0, .4);
-  text-align: center;
-  border-radius: 7px;
   box-shadow: 5px 5px 16px 1px #1A1A1A;
-  color: #FFFFFF;
-  font-family: Lovelo, sans-serif; font-size: 40px; line-height: 24px;
-  text-shadow: -.6px 0 #111111, 0 .6px #111111, .6px 0 #111111, 0 -.6px #111111;
-  padding-bottom: .5em;
-  padding-top: .6em;
-}
-#title p {
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 10px; }
+
+.body_column h2 {
+  padding-bottom: 5px; }
+
+#profile {
+  margin-right: 10px;
+  padding-bottom: 1px; }
+
+#card {
+  border: 1px solid black; }
+
+#demo_reel {
+  background: url("https://ianmrak.graphics/wp-content/uploads/2015/09/creature_stand.jpg");
+  background-size: contain; }
+
+#demo_reel > a {
+  color: #E6E6E6;
+  font-family: Lovelo, sans-serif;
+  font-size: 16px;
+  line-height: 2em;
+  text-shadow: -.3px 0 #333329, 0 .3px #333329, .3px 0 #333329, 0 -.3px #333329; }
+
+#demo_reel > a:hover {
+  background: #FFFFB2;
+  background: rgba(255, 255, 255, 0.2);
+  color: #FFFFDF;
+  font-family: Lovelo, sans-serif;
+  font-size: 16px;
+  line-height: 2em;
+  text-shadow: -.3px 0 #333329, 0 .3px #333329, .3px 0 #333329, 0 -.3px #333329; }
+
+.shot-breakdowns {
+  border-radius: 5px;
+  margin-left: 1em;
+  padding-top: .8em;
+  padding-left: 1em;
+  padding-bottom: .3em;
+  width: 30em;
+  height: 900px;
+  background-color: rgba(255, 255, 255, 0.6);
+  box-shadow: 3px 3px 10px 1px #171717; }
+
+.shot-breakdowns h3 {
+  text-decoration: underline;
+  margin-left: 5px;
+  margin-bottom: .6em;
+  margin-top: .6em; }
+
+.shot-breakdowns p {
+  font-family: Garamond, serif;
+  margin-left: 10px;
+  margin-right: 5px;
+  margin-top: 10px; }
+
+.shot-breakdowns li {
+  list-style-position: inside;
+  list-style-type: disc; }
+
+.shot-breakdowns ul {
+  margin-left: 20px; }
+
+#breakdown-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+#firefly {
+  background: url("https://ianmrak.graphics/wp-content/uploads/2015/09/firefly_title_website_v2.jpg");
+  background-size: cover; }
+
+#firefly > a {
+  color: #E6E6E6;
+  font-family: Lovelo, sans-serif;
+  font-size: 16px;
+  line-height: 2em;
+  text-shadow: -.3px 0 #333329, 0 .3px #333329, .3px 0 #333329, 0 -.3px #333329; }
+
+#firefly > a:hover {
+  background: #FFFFB2;
+  background: rgba(255, 255, 255, 0.2);
+  color: #FFFFDF;
+  font-family: Lovelo, sans-serif;
+  font-size: 16px;
+  line-height: 2em;
+  text-shadow: -.3px 0 #333329, 0 .3px #333329, .3px 0 #333329, 0 -.3px #333329; }
+
+#firefly-abstract {
+  border-radius: 5px;
   position: relative;
-  padding-bottom: .5em;
-}
- video {
-  object-fit: cover;
-}
+  margin-top: 1em;
+  padding-top: .3em;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin: auto;
+  width: 50em;
+  height: 900px;
+  background-color: rgba(255, 255, 255, 0.6);
+  box-shadow: 3px 3px 10px 1px #171717;
+  margin-bottom: 3em; }
+
+#firefly-abstract h2 {
+  text-decoration: underline;
+  margin-left: 5px;
+  margin-bottom: .6em;
+  margin-top: .6em; }
+
+#firefly-abstract p {
+  font-family: Garamond, serif;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  text-align: justify; }
+
+#firefly-abstract li {
+  list-style-position: inside;
+  list-style-type: disc; }
+
+#firefly-abstract ul {
+  margin-left: 20px; }
+
 #bottom-bar {
-  background: rgba(0, 0, 0, .8);
+  background: rgba(0, 0, 0, 0.8);
   height: 1.5em;
   width: 100%;
   position: fixed;
@@ -38,534 +150,331 @@ body {
   font-family: Helvetica, sans-serif;
   font-size: 15px;
   color: #B8B8B8;
-  border-top: 1px solid #181818;
-}
+  border-top: 1px solid #181818; }
+
 #bottom-bar p {
-    padding-top: .15em;
-  	padding-left: 1.5em;
-    display: inline-block;
-}
+  padding-top: .15em;
+  padding-left: 1.5em;
+  display: inline-block; }
+
 #bottom-bar a {
-    float: right;
-    padding-right: 1.5em;
-    color: #B8B8B8;
-    text-decoration: none;
-}
+  float: right;
+  padding-right: 1.5em;
+  color: #B8B8B8;
+  text-decoration: none; }
+
+#lightbox {
+  position: fixed;
+  /* keeps the lightbox window in the current viewport */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8) repeat;
+  text-align: center; }
+
+#lightbox p {
+  text-align: right;
+  color: #fff;
+  margin-right: 20px;
+  font-size: 12px; }
+
+#lightbox img {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 25px #111;
+  -webkit-box-shadow: 0 0 25px #111;
+  -moz-box-shadow: 0 0 25px #111;
+  max-height: 50em;
+  max-width: 70%; }
+
+#lightbox-vid {
+  position: fixed;
+  /* keeps the lightbox window in the current viewport */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8) repeat;
+  text-align: center; }
+
+#lightbox-vid a {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 25px #111;
+  -webkit-box-shadow: 0 0 25px #111;
+  -moz-box-shadow: 0 0 25px #111;
+  max-height: 50em;
+  max-width: 70%; }
+
 .content-wrapper {
   margin-bottom: 1.5em;
-  padding-top: 6em;
-}
-/*--------Nav bar starts here---------*/
-/*@media screen and (min-width: 1000px) {
-  nav
-}*/
+  padding-top: 6em; }
+
 nav {
   z-index: 20;
   margin: auto;
   width: 100%;
   min-width: 1000px;
   position: fixed;
-  top: 0px;
-}
+  top: 0px; }
+
 nav ul ul {
-  display: none;
-}
+  display: none; }
+
 nav ul li:hover > ul {
   text-align: left;
-  display: block;
-}
+  display: block; }
+
 nav > ul {
-  border-bottom: 1px solid rgba(0, 0, 0, .9);
-}
+  border-bottom: 1px solid rgba(0, 0, 0, 0.9); }
+
 nav > ul > li {
-  float: right;
-}
+  float: right; }
+
 nav > ul > li:first-child {
-  float: left;
-}
+  float: left; }
+
 nav ul {
-	background: rgba(0, 0, 0, .8);
-  /*
-  background: linear-gradient(to right, rgba(239, 239, 239, 0.2) 45%, rgba(0, 0, 0, 0.2) 100%);
-	background: linear-gradient(top, #efefef 0%, #bbbbbb 20%);
-	background: -moz-linear-gradient(top, #efefef 0%, #bbbbbb 20%);
-	background: -webkit-linear-gradient(top, #efefef 0%,#bbbbbb 20%);
-  */
-	box-shadow: 0px 0px 9px rgba(0,0,0,0.15);
-	padding-left: 10px;
-	border-radius: 3px;
+  background: rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.15);
+  padding-left: 10px;
+  border-radius: 3px;
   width: 100%;
-	list-style: none;
+  list-style: none;
   text-align: right;
-	position: relative;
-	display: inline-block;
-  font-family: Lovelo, sans-serif; font-size: 16px; line-height: 24px;
-}
+  position: relative;
+  display: inline-block;
+  font-family: Lovelo, sans-serif;
+  font-size: 16px;
+  line-height: 24px; }
+
 nav ul li a {
   text-decoration: none;
   color: #E6E6E6;
   display: block;
   padding: 0px 30px;
   height: 4em;
-  line-height: 4em;
-}
+  line-height: 4em; }
+
 nav ul li ul li a {
   vertical-align: middle;
   height: 2em;
-  transition: background .15s ease-in-out;
-}
+  transition: background .15s ease-in-out; }
+
 nav ul:after {
-	content: "";
+  content: "";
   clear: both;
-  display: block;
-}
+  display: block; }
+
 nav ul li {
-  border-right: .1em solid rgba(0, 0, 0, 0.2);
-}
+  border-right: 0.1em solid rgba(0, 0, 0, 0.2); }
+
 nav ul li:hover {
   z-index: 10;
   position: relative;
-	background: rgba(75, 84, 95, .2);
-	/*background: linear-gradient(right, rgba(255, 255, 255, .1), rgba(230, 230, 230, .1));;
-	background: -moz-linear-gradient(right, rgba(255, 255, 255, .1), rgba(230, 230, 230, .1));
-	background: -webkit-linear-gradient(left, rgba(255, 255, 255, .1), rgba(230, 230, 230, .1));*/
-  transition: background .15s ease-in-out;
-}
+  background: rgba(75, 84, 95, 0.2);
+  transition: background .15s ease-in-out; }
+
 nav ul li.current {
-  background-color: rgba(75, 84, 95, .5);
-}
+  background-color: rgba(75, 84, 95, 0.5); }
 
 nav ul li:hover a {
-	color: #fff;
-}
+  color: #fff; }
+
 nav ul ul {
   background: #5f6975;
   border-radius: 0px;
   padding: 0;
   position: absolute;
-  top: 100%;
-}
+  top: 100%; }
+
 nav ul ul li {
   float: none;
-  border-top: 0px solid rgba(0, 0, 0, .8);
-  border-bottom: 1px solid rgba(0, 0, 0, .8);
-  border-right: 0px solid rgba(0, 0, 0, 0);
-  position: relative;
-}
+  border-top: 0px solid rgba(0, 0, 0, 0.8);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+  border-right: 0px solid transparent;
+  position: relative; }
+
 nav ul ul li a {
   padding: 1em 20px;
-  color: #fff;
-}
+  color: #fff; }
+
 nav ul ul li a:hover {
-  background: #4b545f;
-}
+  background: #4b545f; }
+
 nav ul ul ul {
   position: absolute;
-  left: 100%; top:0;
-}
+  left: 100%;
+  top: 0; }
+
 nav ul ul li a:active {
-  box-shadow: inset 1px 1px 7px 2px #121212;
-}
-/*--------Nav bar ends here--------*/
-/*--------Firefly ID--------*/
-#firefly {
-  background: url("https://ianmrak.graphics/wp-content/uploads/2015/09/firefly_title_website_v2.jpg");
-  background-size: cover;
-}
-#firefly > a {
-  color: #E6E6E6;
-  font-family: Lovelo, sans-serif; font-size: 16px; line-height: 2em;
-  text-shadow: -.3px 0 #333329, 0 .3px #333329, .3px 0 #333329, 0 -.3px #333329;
-}
-#firefly > a:hover {
-  background: #FFFFB2;
-  background: rgba(255, 255, 255, .2);
-  color: #FFFFDF;
-  font-family: Lovelo, sans-serif; font-size: 16px; line-height: 2em;
-  text-shadow: -.3px 0 #333329, 0 .3px #333329, .3px 0 #333329, 0 -.3px #333329;
-}
-#firefly-abstract {
-  border-radius: 5px;
-	position: relative;
-	margin-top: 1em;
-  padding-top: .3em;
-  padding-left: 1em;
-  padding-right: 1em;
-  margin: auto;
-	width: 50em;
-	height: 900px;
-	background-color: rgba(255, 255, 255, .6);
-  box-shadow: 3px 3px 10px 1px #171717;
-	margin-bottom: 3em;
-}
-#firefly-abstract h2 {
-  text-decoration: underline;
-  margin-left: 5px;
-  margin-bottom: .6em;
-  margin-top: .6em;
-}
-#firefly-abstract p {
-  font-family: Garamond, serif;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-top: 10px;
-  text-align: justify;
-}
-#firefly-abstract li {
-  list-style-position: inside;
-  list-style-type: disc;
-}
-#firefly-abstract ul {
-  margin-left: 20px;
-}
-/*-------Firefly ID ends here--------*/
-/*-------Demo Reel ID--------*/
-#demo_reel {
-  background: url("https://ianmrak.graphics/wp-content/uploads/2015/09/creature_stand.jpg");
-  background-size: contain;
-}
-#demo_reel > a {
-  color: #E6E6E6;
-  font-family: Lovelo, sans-serif; font-size: 16px; line-height: 2em;
-  text-shadow: -.3px 0 #333329, 0 .3px #333329, .3px 0 #333329, 0 -.3px #333329;
-}
-#demo_reel > a:hover {
-  background: #FFFFB2;
-  background: rgba(255, 255, 255, .2);
-  color: #FFFFDF;
-  font-family: Lovelo, sans-serif; font-size: 16px; line-height: 2em;
-  text-shadow: -.3px 0 #333329, 0 .3px #333329, .3px 0 #333329, 0 -.3px #333329;
-}
-.shot-breakdowns {
-  border-radius: 5px;
-	margin-left: 1em;
-  padding-top: .8em;
-  padding-left: 1em;
-  padding-bottom: .3em;
-	width: 30em;
-	height: 900px;
-	background-color: rgba(255, 255, 255, .6);
-  box-shadow: 3px 3px 10px 1px #171717;
-}
-.shot-breakdowns h3 {
-  text-decoration: underline;
-  margin-left: 5px;
-  margin-bottom: .6em;
-  margin-top: .6em;
-}
-.shot-breakdowns p {
-  font-family: Garamond, serif;
-  margin-left: 10px;
-  margin-right: 5px;
-  margin-top: 10px;
-}
-.shot-breakdowns li {
-  list-style-position: inside;
-  list-style-type: disc;
-}
-.shot-breakdowns ul {
-  margin-left: 20px;
-}
-#breakdown-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-/*-------Demo Reel ID ends here-------*/
-/*-------Other ID------ */
+  box-shadow: inset 1px 1px 7px 2px #121212; }
+
 #other {
   background: url("https://ianmrak.graphics/wp-content/uploads/2015/09/Mery.jpg");
-  background-size: cover;
-}
+  background-size: cover; }
+
 #other > a {
   color: #E6E6E6;
-  font-family: Lovelo, sans-serif; font-size: 16px; line-height: 2em;
-  text-shadow: -.3px 0 #333329, 0 .3px #333329, .3px 0 #333329, 0 -.3px #333329;
-}
+  font-family: Lovelo, sans-serif;
+  font-size: 16px;
+  line-height: 2em;
+  text-shadow: -.3px 0 #333329, 0 .3px #333329, .3px 0 #333329, 0 -.3px #333329; }
+
 #other > a:hover {
   background: #FFFFB2;
-  background: rgba(255, 255, 255, .2);
+  background: rgba(255, 255, 255, 0.2);
   color: #FFFFDF;
-  font-family: Lovelo, sans-serif; font-size: 16px; line-height: 2em;
-  text-shadow: -.3px 0 #333329, 0 .3px #333329, .3px 0 #333329, 0 -.3px #333329;
-}
-/*------Resume styles------ */
+  font-family: Lovelo, sans-serif;
+  font-size: 16px;
+  line-height: 2em;
+  text-shadow: -.3px 0 #333329, 0 .3px #333329, .3px 0 #333329, 0 -.3px #333329; }
+
+/*---------Portfolio Layout---------*/
+#firefly-body {
+  background: linear-gradient(#29293D, #08080C); }
+
+#demo-body {
+  background: linear-gradient(#536E8A, gray); }
+
+.video {
+  background-color: rgba(0, 0, 0, 0.7);
+  margin: auto;
+  padding: .5em;
+  border-radius: 7px;
+  display: inline-block;
+  box-shadow: 5px 5px 16px 1px rgba(0, 0, 0, 0.55); }
+
+.full-vid {
+  max-height: 720px;
+  max-width: 95vw;
+  min-height: 540px; }
+
+.list-vid {
+  max-height: 360px;
+  max-width: 95vw; }
+
+.list-pic {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  padding-top: 0em; }
+
+.animation-list {
+  margin: auto;
+  padding: .1em;
+  display: inline-block; }
+
+.picture-list {
+  float: left;
+  height: 20em;
+  width: 20%;
+  min-width: 20em;
+  max-width: 25em;
+  border-right: 1px solid rgba(128, 128, 128, 0.7);
+  border-bottom: 1px solid rgba(128, 128, 128, 0.7);
+  box-sizing: border-box; }
+
+.video-parent {
+  display: flex;
+  padding-bottom: 2em; }
+
+.list-video {
+  text-align: center;
+  background-color: rgba(5, 5, 5, 0.5);
+  border-top: 2px solid #181818;
+  border-bottom: 2px solid #181818;
+  box-shadow: 5px 5px 16px 1px rgba(0, 0, 0, 0.55);
+  margin-bottom: 2em;
+  padding-bottom: .5em; }
+
+.list-image {
+  float: left;
+  background-color: rgba(5, 5, 5, 0.5);
+  border-top: 1px solid #181818;
+  border-bottom: 1px solid #181818;
+  box-shadow: 5px 5px 16px 1px rgba(0, 0, 0, 0.55); }
+
 .wrapper {
-   box-shadow: 5px 5px 16px 1px #1A1A1A;
-   margin: auto;
-   width: 50em;
-   padding-right: 1em;
-}
- #resume_header {
-   z-index: 5;
-   position: relative;
-   width: 50em;
-   height: 3.7em;
-   background-color: rgba(255, 255, 255, .7);
-   margin-bottom: 8px;
-   padding-left: 1em;
-   margin: auto;
- }
+  box-shadow: 5px 5px 16px 1px #1A1A1A;
+  margin: auto;
+  width: 50em;
+  padding-right: 1em; }
+
+#resume_header {
+  z-index: 5;
+  position: relative;
+  width: 50em;
+  height: 3.7em;
+  background-color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 8px;
+  padding-left: 1em;
+  margin: auto; }
+
 #resume_name {
   float: left;
   margin-left: 15px;
   padding-top: .5em;
   font-size: 26px;
   font-family: Helvetica, sans-serif;
-  color: #232323;
-}
+  color: #232323; }
+
 #resume_email {
-	float:right;
-	margin-right: 20px;
-	padding-top: .8em;
-	font-size: 20px;
-	font-family: Helvetica, sans-serif;
-	color: #232323;
-}
+  float: right;
+  margin-right: 20px;
+  padding-top: .8em;
+  font-size: 20px;
+  font-family: Helvetica, sans-serif;
+  color: #232323; }
+
 #resume_body {
-	position: relative;
+  position: relative;
   padding-top: .3em;
   padding-left: 1em;
   padding-bottom: .3em;
   margin: auto;
-	width: 50em;
-	height: 850px;
-	background-color: rgba(255, 255, 255, .6);
-}
+  width: 50em;
+  height: 850px;
+  background-color: rgba(255, 255, 255, 0.6); }
+
 #resume_body h3 {
   text-decoration: underline;
   margin-left: 5px;
   margin-bottom: .6em;
-  margin-top: .6em;
-}
+  margin-top: .6em; }
+
 #resume_body p {
   font-family: Garamond, serif;
   margin-left: 10px;
   margin-right: 5px;
-  margin-top: 10px;
-}
+  margin-top: 10px; }
 
 #resume_body li {
   list-style-position: inside;
-  list-style-type: disc;
-}
+  list-style-type: disc; }
 
 #resume_body ul {
-  margin-left: 20px;
-}
-/*
- .left {
-   border-radius: 0px;
-   background-color: gray;
-   width: 5em;
-   height: 850px;
-   float: left;
-}
-*/
- #footer {
-   border-radius: 0px;
-   height: 4em;
-   width: 50em;
-   clear: both;
-   background-color: rgba(255, 255, 255, .7);
-   text-align: center;
-   padding-left: 1em;
-   margin: auto;
-   margin-bottom: 0em;
- }
+  margin-left: 20px; }
+
+#footer {
+  border-radius: 0px;
+  height: 4em;
+  width: 50em;
+  clear: both;
+  background-color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+  padding-left: 1em;
+  margin: auto;
+  margin-bottom: 0em; }
+
 #footer p {
   font-family: Helvetica, sans-serif;
   font-size: 18px;
   position: relative;
   padding-top: 1.2em;
-  color: #232323;
-}
-/*---------Resume ends here---------*/
-/*---------About Me starts here---------*/
-.aboutme {
-  font-size: 18px;
-  padding-bottom: 10px;
-  margin-left: 13em;
-}
-.body_column {
-  width: 50em;
-  margin: auto;
-  box-shadow: 5px 5px 16px 1px #1A1A1A;
-  background-color: rgba(255, 255, 255, .6);
-  padding: 10px;
-}
-.body_column h2 {
-  padding-bottom: 5px;
-}
-#profile {
-  margin-right: 10px;
-  padding-bottom: 1px;
-}
-#card {
-  border: 1px solid black;
-}
-/*---------Portfolio Layout---------*/
-#firefly-body {
-  background: linear-gradient(#29293D, #08080C);
-}
-#demo-body {
-  background: linear-gradient(#536E8A, gray);
-}
-.video {
-  background-color:  rgba(0, 0, 0, .7);
-  margin: auto;
-  padding: .5em;
-  border-radius: 7px;
-  display: inline-block;
-  box-shadow: 5px 5px 16px 1px rgba(0, 0, 0, .55);
-}
-.full-vid {
-  max-height: 720px;
-  max-width: 95vw;
-  min-height: 540px;
-}
-.list-vid {
-  max-height: 360px;
-  max-width: 95vw;
-}
-.list-pic {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  padding-top: 0em;
-}
-.animation-list {
-  margin: auto;
-  padding: .1em;
-  display: inline-block;
-}
-.picture-list {
- float: left;
- height: 20em;
- width: 20%;
- min-width: 20em;
- max-width: 25em;
- border-right: 1px solid rgba(128, 128, 128, .7);
- border-bottom: 1px solid rgba(128, 128, 128, .7);
- box-sizing: border-box;
-}
-.video-parent {
-  display: flex;
-  padding-bottom: 2em;
-}
-.list-video {
-  text-align: center;
-  background-color: rgba(5, 5, 5, .5);
-  border-top: 2px solid #181818;
-  border-bottom: 2px solid #181818;
-  box-shadow: 5px 5px 16px 1px rgba(0, 0, 0, .55);
-  margin-bottom: 2em;
-  padding-bottom: .5em;
-}
-.list-image {
-  float: left;
-  background-color: rgba(5, 5, 5, .5);
-  border-top: 1px solid #181818;
-  border-bottom: 1px solid #181818;
-  box-shadow: 5px 5px 16px 1px rgba(0, 0, 0, .55);
-}
-/*--------Pop-Up---------*/
-#lightbox {
-    position:fixed; /* keeps the lightbox window in the current viewport */
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    background: rgba(0 ,0 ,0, .8) repeat;
-    text-align:center;
-}
-#lightbox p {
-    text-align:right;
-    color:#fff;
-    margin-right:20px;
-    font-size:12px;
-}
-#lightbox img {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    box-shadow:0 0 25px #111;
-    -webkit-box-shadow:0 0 25px #111;
-    -moz-box-shadow:0 0 25px #111;
-    max-height: 50em;
-    max-width: 70%;
-}
-#lightbox-vid {
-    position:fixed; /* keeps the lightbox window in the current viewport */
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    background: rgba(0 ,0 ,0, .8) repeat;
-    text-align:center;
-}
-#lightbox-vid a {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    box-shadow:0 0 25px #111;
-    -webkit-box-shadow:0 0 25px #111;
-    -moz-box-shadow:0 0 25px #111;
-    max-height: 50em;
-    max-width: 70%;
-}
-/* old
-#header-parent {
-  display: flex;
-  height: 100vh;
-}
-
- div#header {
-   margin: auto;
-   color: blue;
-   background: black;
-   background-image: url("https://ianmrak.graphics/wp-content/uploads/2015/02/firefly_title.jpg");
-   background-size: contain;
-   border-radius: 70%;
-   height: 50px;
-   width: 100px;
-   text-align: center;
-   line-height: 50px;
-   border: 1px solid #A5A56A;
-  box-shadow: 2px 2px 8px 1px gray;
-   text-shadow: -.5px 0 #333329, 0 .5px #333329, .5px 0 #333329, 0 -.5px #333329;
-   transition: background-color 0.2s ease;
- }
-
- div#header a:visited {
-   color: #FFFF66;
- }
- div#header a:hover {
-   color: #FFFFD1;
- }
- .layer {
-   height: inherit;
-   width: inherit;
-   border-radius: 70%;
-   background: rgba(255, 255, 102, 0);
- }
- .layer:hover {
-   transition: background 1s ease;
-   transition: box-shadow 0.2s ease;
-   box-shadow: 2px 2px 8px 1px gray;
-   background: rgba(255, 255, 102, .2);
- }
- div#header:active {
-   box-shadow: inset 5px 5px 16px 4px black;
- }
- div#header a {
-  text-decoration: none;
-  font-family: Garamond, sans-serif;
-  font-weight: bold;
-  position: relative;
-}
- old end */
-/* #header div.main */
-/* Title page */
+  color: #232323; }

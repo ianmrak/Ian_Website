@@ -1,11 +1,11 @@
 angular.module('App.ModelingController', [])
 
-.controller('ModelingController', ['$scope', 'ModelingService', function($scope, modeling) {
-  $scope.items = modeling;
+.controller('ModelingController', ['$scope', 'ModelingService', function($scope, ModelingService) {
+  $scope.items = ModelingService;
 
-  $('#lightbox').live('click', function() { //must use live, as the lightbox element is inserted into the DOM
- 		$('#lightbox').hide();
- 	});
+  // $('#lightbox').live('click', function() { //must use live, as the lightbox element is inserted into the DOM
+ // 		$('#lightbox').hide();
+ // 	});
 
   $scope.lightbox_trigger = function(e, item) {
  		//prevent default action (hyperlink)
