@@ -6,7 +6,8 @@
 .body_column {
   width: 50em;
   margin: auto;
-  box-shadow: 5px 5px 16px 1px #1A1A1A;
+  // box-shadow: 5px 5px 16px 1px #1A1A1A;
+  border: 1px solid gray;
   background-color: rgba(255, 255, 255, .6);
   padding: 10px;
 }
