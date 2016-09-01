@@ -6,3 +6,5 @@ build/
 dist/
 server/account.txt
 .env
+old/
+backup/
