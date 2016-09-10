@@ -23,28 +23,37 @@ angular.module("mySite",
 ])
 
 .config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
-  $urlRouterProvider.otherwise('/');
+  $urlRouterProvider.otherwise('home');
   $stateProvider
-    .state('home', {
-      url: ''
-    })
-    .state('illustrations', {
-      url: '/illustrations',
-      controller: 'IllustrationController',
-      templateUrl: 'views/illustrations.html'
-    })
-    .state('modeling', {
-      url: '/modeling',
-      controller: 'ModelingController',
-      templateUrl: 'views/modeling.html'
-    })
-    .state('projects', {
-      url: '/projects',
-      controller: 'ProjectController',
-      templateUrl: 'views/projects.html'
-    })
-    .state('about', {
-      url: '/about',
-      templateUrl: 'views/about.html'
-    })
+  .state('home', {
+    url: '/home',
+    templateUrl: 'views/home_page.html'
+  })
+  .state('illustrations', {
+    url: '/illustrations',
+    controller: 'IllustrationController',
+    templateUrl: 'views/illustrations.html'
+  })
+  .state('modeling', {
+    url: '/modeling',
+    controller: 'ModelingController',
+    templateUrl: 'views/modeling.html'
+  })
+  .state('projects', {
+    url: '/projects',
+    controller: 'ProjectController',
+    templateUrl: 'views/projects.html'
+  })
+  .state('about', {
+    url: '/about',
+    templateUrl: 'views/about.html'
+  })
+  .state('demo_reel', {
+    url: '/demo_reel',
+    templateUrl: 'views/demo_reel.html'
+  })
+  .state('firefly', {
+    url: '/firefly',
+    templateUrl: 'views/firefly.html'
+  })
 }]);

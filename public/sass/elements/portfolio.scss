@@ -5,17 +5,14 @@
   background: linear-gradient(#536E8A, gray);
 }
 .video {
-  background-color:  rgba(0, 0, 0, .7);
+  // background-color:  rgba(0, 0, 0, .7);
   margin: auto;
-  padding: .5em;
-  border-radius: 7px;
   display: inline-block;
-  box-shadow: 5px 5px 16px 1px rgba(0, 0, 0, .55);
+  box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, .2);
 }
 .full-vid {
   max-height: 720px;
-  max-width: 95vw;
-  min-height: 540px;
+  max-width: 80vw;
 }
 .list-vid {
   max-height: 360px;
@@ -35,7 +32,7 @@
 .picture-list {
  float: left;
  height: 20em;
- width: 20%;
+ width: 25%;
  min-width: 20em;
  max-width: 25em;
  border-right: 1px solid rgba(128, 128, 128, .7);
@@ -48,7 +45,7 @@
 }
 .list-video {
   text-align: center;
-  background-color: rgba(5, 5, 5, .5);
+  background-color: rgba(58, 58, 58, 0.86);
   border-top: 2px solid #181818;
   border-bottom: 2px solid #181818;
   box-shadow: 5px 5px 16px 1px rgba(0, 0, 0, .55);
@@ -59,7 +56,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: rgba(5, 5, 5, .5);
+  background-color: $portfolio-bg;
   border-top: 1px solid #181818;
   border-bottom: 1px solid #181818;
   box-shadow: 5px 5px 16px 1px rgba(0, 0, 0, .55);

@@ -2,48 +2,9 @@
   background: url("https://ianmrak.graphics/wp-content/uploads/2015/09/firefly_title_website_v2.jpg");
   background-size: cover;
 }
-#firefly > a {
-  color: #E6E6E6;
-  font-family: Lovelo, sans-serif; font-size: 14px; line-height: 2em;
-  text-shadow: -.3px 0 #333329, 0 .3px #333329, .3px 0 #333329, 0 -.3px #333329;
-}
-#firefly > a:hover {
-  background: #FFFFB2;
-  background: rgba(255, 255, 255, .2);
-  color: #FFFFDF;
-  text-shadow: -.3px 0 #333329, 0 .3px #333329, .3px 0 #333329, 0 -.3px #333329;
-}
-#firefly-abstract {
-  border-radius: 5px;
-	position: relative;
-	margin-top: 1em;
-  padding-top: .3em;
+.film-breakdowns {
+  padding-top: .8em;
   padding-left: 1em;
-  padding-right: 1em;
-  margin: auto;
-	width: 50em;
-	height: 900px;
-	background-color: rgba(255, 255, 255, .6);
-  box-shadow: 3px 3px 10px 1px #171717;
-	margin-bottom: 3em;
-}
-#firefly-abstract h2 {
-  text-decoration: underline;
-  margin-left: 5px;
-  margin-bottom: .6em;
-  margin-top: .6em;
-}
-#firefly-abstract p {
-  font-family: Garamond, serif;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-top: 10px;
-  text-align: justify;
-}
-#firefly-abstract li {
-  list-style-position: inside;
-  list-style-type: disc;
-}
-#firefly-abstract ul {
-  margin-left: 20px;
+  padding-bottom: .3em;
+  color: $off-white;
 }

@@ -2,39 +2,43 @@
   z-index: 20;
   margin: auto;
   width: 100%;
-  min-width: 870px;
   position: fixed;
   top: 0px;
+  img {
+    height: inherit;
+    padding: 8px 0px;
+    box-sizing: border-box;
+  }
 }
 .navbar ul ul {
   display: none;
 }
-.navbarbar ul li:hover > ul {
+.navbar ul li:hover > ul {
   text-align: left;
   display: block;
 }
 .navbar > ul {
-  border-bottom: 1px solid rgba(0, 0, 0, .9);
-}
-.navbar > ul > li {
-  float: right;
+  border-bottom: $nav-border;
 }
 .navbar > ul > li:first-child {
+  a {
+    padding: 0;
+  }
   float: left;
-  border-left: .1em solid rgba(0, 0, 0, 0.2);
+  border-left: $nav-border;
 }
 .navbar > ul > li:last-child {
-  border-left: .1em solid rgba(0, 0, 0, 0.2);
+  border-left: $nav-border;
 }
 .navbar ul {
-	background: rgba(0, 0, 0, .8);
-	box-shadow: 0px 0px 9px rgba(0,0,0,0.15);
-	padding-left: 10px;
+  background: $grey-bar;
+  box-shadow: 0px 0px 9px rgba(0,0,0,0.15);
+  padding-left: 10px;
   width: 100%;
-	list-style: none;
+  list-style: none;
   text-align: right;
-	position: relative;
-	display: inline-block;
+  position: relative;
+  display: inline-block;
   font-family: Lovelo, sans-serif;
   line-height: 24px;
 }
@@ -48,22 +52,28 @@
   line-height: 3em;
 }
 .navbar ul li ul li a {
-  vertical-align: middle;
-  height: 2em;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  height: 100%;
   transition: background .15s ease-in-out;
 }
 .navbar ul:after {
-	content: "";
+  content: "";
   clear: both;
   display: block;
 }
 .navbar ul li {
-  border-right: .1em solid rgba(0, 0, 0, 0.2);
+  border-right: $nav-border;
+  float: right;
+  display: flex;
+  align-items: center;
+  height: 50px;
 }
 .navbar ul li:hover {
   z-index: 10;
   position: relative;
-	background: rgba(75, 84, 95, .2);
+  background: rgba(75, 84, 95, .2);
   transition: background .15s ease-in-out;
 }
 .navbar ul li.current {
@@ -71,7 +81,7 @@
 }
 
 .navbar ul li:hover a {
-	color: #fff;
+  color: #fff;
 }
 .navbar ul ul {
   background: #5f6975;
@@ -88,11 +98,14 @@
   position: relative;
 }
 .navbar ul ul li a {
-  padding: 1em 20px;
+  width: 100%;
   color: #fff;
 }
 .navbar ul ul li a:hover {
-  background: #4b545f;
+    background: #FFFFB2;
+    background: rgba(255, 255, 255, .2);
+    color: #FFFFDF;
+    text-shadow: -.3px 0 #333329, 0 .3px #333329, .3px 0 #333329, 0 -.3px #333329;
 }
 .navbar ul ul ul {
   position: absolute;

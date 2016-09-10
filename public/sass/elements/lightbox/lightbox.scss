@@ -1,20 +1,21 @@
 $btn-size: 50px;
 
 .lightbox {
-  max-height: 50em;
-  min-width: 70%;
+  display: flex;
+  flex-direction: column;
   img {
-    max-width: 100%;
+    max-width: 650px;
+    max-height:650px;
     box-shadow:0 0 25px #111;
     -webkit-box-shadow:0 0 25px #111;
     -moz-box-shadow:0 0 25px #111;
   }
-  p {
-    text-align:right;
-    color:#fff;
-    margin-right:20px;
-    font-size:12px;
-  }
+}
+.lightbox-title {
+  text-align: center;
+  line-height: 30px;
+  background-color: black;
+  color: $off-white;
 }
 .lightbox-btn {
   position: absolute;
@@ -29,7 +30,7 @@ $btn-size: 50px;
   padding: 15px;
   border-radius: 100%;
   &:hover {
-    background-color: #f3f3f5;
+    background-color: $off-white;
   }
 }
 .prev-btn {

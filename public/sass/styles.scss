@@ -2,6 +2,10 @@
 @import './constants';
 @import './elements/main';
 
+// == Home ================== //
+@import './elements/home/wrapper';
+@import './elements/home/home';
+
 // == Personal ============== //
 @import './elements/about/wrapper';
 @import './elements/about/aboutme';

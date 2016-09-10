@@ -1,22 +1,31 @@
 <div id="project-wrapper">
-  <h1>Recent Projects</h1>
   <div class="project-list">
-    <div ng-repeat="project in projects | orderBy: '-rating' ">
+    <div class="project-panel" ng-repeat="project in projects | orderBy: '-rating' ">
       <a href="{{ project.link }}" target="_blank" class="project-link">
         <div class="project">
-          <h3 class="project-name">{{ project.name }}</h3>
-          <div class="project-info">
-            <span class="project-description">{{ project.desc }}</span>
-            <span class="project-team">{{ project.team }}</span>
-            <span class="project-stack">{{ project.stack }}</span>
-            <span class="project-deadline">Deadline: {{ project.deadline }}</span>
-            <span>Contribution:</span>
-            <ul>
-              <li ng-repeat="contribution in project.contribution" class="project-contribution">{{ contribution }}</li>
-            </ul>
-          </div>
-        </div>
-      </a>
+          <div class="project-title">
+            <h3 class="project-name">{{ project.name }}</h3>
+            <!-- <div class="project-github">
+            <a class="github-link" href="{{ project.github }}" target="_blank">
+            <img src="{{ gitIcon }}">
+          </a>
+        </div> -->
+      </div>
+      <div class="project-info">
+        <span class="project-description">{{ project.desc }}</span>
+        <span class="project-team"><strong>Team: </strong>{{ project.team }}</span>
+        <span class="project-stack"><strong>Tech stack: </strong>{{ project.stack }}</span>
+        <span class="project-deadline"><strong>Deadline: </strong>{{ project.deadline }}</span>
+        <span><strong>Contribution:</strong></span>
+        <ul>
+          <li ng-repeat="contribution in project.contribution" class="project-contribution">{{ contribution }}</li>
+        </ul>
+        <!-- <div class="project-image" ng-if="project.image">
+        <img src="{{ project.image }}"/>
+      </div> -->
     </div>
   </div>
+</a>
+</div>
+</div>
 </div>

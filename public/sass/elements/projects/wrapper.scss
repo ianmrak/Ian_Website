@@ -3,12 +3,18 @@
   font-size: 14px;
   h1 {
     text-align: center;
+    color: $off-white;
+    font-family: $lovelo;
+    padding-bottom: 10px;
+    font-size: 34px;
   }
 }
-
 .project-list {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: $portfolio-bg;
+  border-top: 1px solid #181818;
+  border-bottom: 1px solid #181818;
   &:first-child {
     margin: 0;
   }

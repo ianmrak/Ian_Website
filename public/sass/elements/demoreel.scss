@@ -2,49 +2,54 @@
   background: url("https://ianmrak.graphics/wp-content/uploads/2015/09/creature_stand.jpg");
   background-size: contain;
 }
-#demo_reel > a {
-  color: #E6E6E6;
-  font-family: Lovelo, sans-serif; font-size: 14px; line-height: 2em;
-  text-shadow: -.3px 0 #333329, 0 .3px #333329, .3px 0 #333329, 0 -.3px #333329;
-}
-#demo_reel > a:hover {
-  background: #FFFFB2;
-  background: rgba(255, 255, 255, .2);
-  color: #FFFFDF;
-  text-shadow: -.3px 0 #333329, 0 .3px #333329, .3px 0 #333329, 0 -.3px #333329;
-}
 .shot-breakdowns {
-  border-radius: 5px;
-	margin-left: 1em;
   padding-top: .8em;
   padding-left: 1em;
   padding-bottom: .3em;
 	width: 30em;
-	height: 900px;
-	background-color: rgba(255, 255, 255, .6);
-  box-shadow: 3px 3px 10px 1px #171717;
+  color: $off-white;
 }
-.shot-breakdowns h3 {
-  text-decoration: underline;
-  margin-left: 5px;
-  margin-bottom: .6em;
-  margin-top: .6em;
+.row {
+  display: flex;
+  justify-content: center;
 }
-.shot-breakdowns p {
-  font-family: Garamond, serif;
-  margin-left: 10px;
-  margin-right: 5px;
-  margin-top: 10px;
+.breakdown-header {
+  font-size: 16px;
+  margin-bottom: 20px;
 }
-.shot-breakdowns li {
+.breakdown-list {
+  font-size: 14px;
   list-style-position: inside;
   list-style-type: disc;
+  margin-bottom: 10px;
 }
-.shot-breakdowns ul {
-  margin-left: 20px;
+
+.breakdown-p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 20px;
 }
-#breakdown-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.breakdown-ul {
+  margin-bottom: 20px;
+}
+.breakdown-wrapper {
+  padding: 0 20px;
+  background-color: $portfolio-bg;
+  font-family: $lovelo;
+  &:before {
+    background-color: $portfolio-bg;
+    height: 50px;
+    display: table;
+    content: '';
+  }
+  &:after {
+    background-color: $portfolio-bg;
+    height: 50px;
+    display: table;
+    content: '';
+  }
+  h1 {
+    color: $off-white;
+    margin-bottom: 20px;
+  }
 }
