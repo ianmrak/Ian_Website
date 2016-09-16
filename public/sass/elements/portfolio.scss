@@ -38,6 +38,17 @@
   border-bottom: 1px solid rgba(128, 128, 128, .7);
   box-sizing: border-box;
 }
+.picture-desc {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0,0,0,.0);
+  transition: 200ms;
+  &:hover {
+      background-color: rgba(0,0,0,1);
+  }
+}
 @media (max-width: 1024px) {
   .picture-list {
     flex: 1 0 50%;

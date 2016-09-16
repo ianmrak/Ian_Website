@@ -8,11 +8,6 @@ body {
 .content-wrapper {
   padding: 4em 0 3em; }
 
-.jumbotron {
-  margin-top: 25px;
-  background-color: rgba(221, 221, 221, 0.2);
-  color: white; }
-
 hr {
   margin: 18px;
   border: 0;
@@ -21,8 +16,11 @@ hr {
 td {
   vertical-align: top; }
 
+video {
+  cursor: pointer; }
+
 .home-page {
-  background: url("../../../assets/firefly_bg.jpg");
+  background: url("../../../assets/image/FF_bg.jpg");
   background-size: cover;
   position: absolute;
   display: flex;
@@ -154,9 +152,9 @@ td {
   font-family: Helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
-  background-color: white;
   border-top: 1px solid #181818;
-  border-bottom: 1px solid #181818; }
+  border-bottom: 1px solid #181818;
+  background-color: #f3f3f5; }
   #project-wrapper h2 {
     font-family: "Lovela", sans-serif;
     padding-bottom: 10px; }
@@ -167,6 +165,7 @@ td {
     clear: both; }
 
 .project-list {
+  background-color: white;
   margin: auto;
   width: 960px; }
   .project-list:before {
@@ -178,7 +177,7 @@ td {
   margin-bottom: 5px; }
 
 .project {
-  padding: 10px;
+  padding: 10px 20px;
   margin: auto;
   box-sizing: border-box;
   background-color: white;
@@ -360,6 +359,16 @@ td {
   border-bottom: 1px solid rgba(128, 128, 128, 0.7);
   box-sizing: border-box; }
 
+.picture-desc {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: transparent;
+  transition: 200ms; }
+  .picture-desc:hover {
+    background-color: black; }
+
 @media (max-width: 1024px) {
   .picture-list {
     flex: 1 0 50%;
@@ -412,6 +421,8 @@ td {
 
 .lightbox-container {
   position: fixed;
+  justify-content: center;
+  width: 800px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -420,14 +431,13 @@ td {
   z-index: 1000; }
 
 .lightbox {
+  box-sizing: border-box;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  border: 1px solid rgba(128, 128, 128, 0.7); }
   .lightbox img {
     max-width: 650px;
-    max-height: 650px;
-    box-shadow: 0 0 25px #111;
-    -webkit-box-shadow: 0 0 25px #111;
-    -moz-box-shadow: 0 0 25px #111; }
+    max-height: 650px; }
 
 .lightbox-title {
   text-align: center;

@@ -20,6 +20,7 @@ angular.module("mySite",
   'App.FooterElement',
   // Attributes
   'App.PortfolioAttribute',
+  'App.VideoAttribute'
 ])
 
 .config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
@@ -32,12 +33,12 @@ angular.module("mySite",
   .state('illustrations', {
     url: '/illustrations',
     controller: 'IllustrationController',
-    templateUrl: 'views/illustrations.html'
+    templateUrl: 'views/portfolio.html'
   })
   .state('modeling', {
     url: '/modeling',
     controller: 'ModelingController',
-    templateUrl: 'views/modeling.html'
+    templateUrl: 'views/portfolio.html'
   })
   .state('projects', {
     url: '/projects',

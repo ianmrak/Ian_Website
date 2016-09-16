@@ -1,6 +1,6 @@
 angular.module('App.ProjectService', [])
 
-.factory('ProjectService', function() {
+.factory('ProjectService', [function() {
   var gitIcon = '../../assets/github.png';
   var projects = [
     {
@@ -81,4 +81,4 @@ angular.module('App.ProjectService', [])
     projects: projects,
     gitIcon: gitIcon
   }
-});
+}]);

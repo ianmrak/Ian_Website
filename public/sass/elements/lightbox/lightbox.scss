@@ -1,14 +1,13 @@
 $btn-size: 50px;
 
 .lightbox {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  border: 1px solid rgba(128, 128, 128, .7);
   img {
     max-width: 650px;
     max-height:650px;
-    box-shadow:0 0 25px #111;
-    -webkit-box-shadow:0 0 25px #111;
-    -moz-box-shadow:0 0 25px #111;
   }
 }
 .lightbox-title {

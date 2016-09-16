@@ -1,6 +1,6 @@
 angular.module('App.PortfolioService', [])
 
-.factory('PortfolioService', function() {
+.factory('PortfolioService', [function() {
   var activeItem;
   var index;
 
@@ -9,4 +9,4 @@ angular.module('App.PortfolioService', [])
     activeItem: activeItem,
     index: index
   }
-});
+}]);

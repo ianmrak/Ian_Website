@@ -1,9 +1,0 @@
-<div class="list-image" portfolio-ctrls>
-  <div class="picture-list" ng-repeat="item in items">
-    <a class="list-link" ng-click="setActiveItem($event, item, $index)" ng-href="{{ item.link }}" class="lightbox_trigger">
-    <video class="list-pic" ng-src="{{ item.link }}" ng-if="item.isVideo === true" controls poster="{{ item.poster }}">
-    </video>
-    <img class="list-pic" ng-if="item.isVideo !== true" ng-src="{{ item.link }}">
-  </a>
-  </div>
-</div>
