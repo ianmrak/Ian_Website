@@ -8,6 +8,19 @@ body {
 .content-wrapper {
   padding: 4em 0 3em; }
 
+.jumbotron {
+  margin-top: 25px;
+  background-color: rgba(221, 221, 221, 0.2);
+  color: white; }
+
+hr {
+  margin: 18px;
+  border: 0;
+  border-top: 1px solid #eeeeee; }
+
+td {
+  vertical-align: top; }
+
 .home-page {
   background: url("../../../assets/firefly_bg.jpg");
   background-size: cover;
@@ -139,49 +152,68 @@ body {
 
 #project-wrapper {
   font-family: Helvetica, sans-serif;
-  font-size: 14px; }
-  #project-wrapper h1 {
-    text-align: center;
-    color: #f3f3f5;
-    font-family: "Lovela", sans-serif;
-    padding-bottom: 10px;
-    font-size: 34px; }
-
-.project-list {
-  display: flex;
-  flex-wrap: wrap;
-  background-color: #324864;
+  font-size: 13px;
+  line-height: 18px;
+  background-color: white;
   border-top: 1px solid #181818;
   border-bottom: 1px solid #181818; }
-  .project-list:first-child {
-    margin: 0; }
+  #project-wrapper h2 {
+    font-family: "Lovela", sans-serif;
+    padding-bottom: 10px; }
+  #project-wrapper:before, #project-wrapper :after {
+    display: table;
+    content: ''; }
+  #project-wrapper:after {
+    clear: both; }
+
+.project-list {
+  margin: auto;
+  width: 960px; }
+  .project-list:before {
+    content: '';
+    margin: 18px; }
 
 .project-panel {
   position: relative;
-  width: 50%;
   margin-bottom: 5px; }
 
 .project {
   padding: 10px;
-  border: 1px solid gray;
-  width: calc(100% - 5px);
   margin: auto;
   box-sizing: border-box;
   background-color: white;
-  transition-duration: 100ms; }
+  transition-duration: 100ms;
+  border-radius: 8px; }
+  .project:before, .project :after {
+    display: table;
+    content: ''; }
+  .project:after {
+    clear: both; }
   .project:hover {
-    background-color: #f3f3f5; }
+    background-color: #fbfbfb; }
   .project span {
     margin-top: 10px; }
+
+.well {
+  float: left;
+  background-color: #f5f5f5;
+  width: 380px;
+  padding: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 4px; }
+  .well table {
+    border-spacing: 10px 0px; }
 
 .project-link {
   text-decoration: none;
   color: black; }
 
 .project-info {
-  position: relative;
-  display: flex;
-  flex-direction: column; }
+  float: left;
+  width: 460px; }
   .project-info ul {
     padding-left: 1em; }
 
@@ -205,10 +237,6 @@ body {
   display: flex;
   align-items: center;
   border-bottom: 1px solid gray; }
-
-.project-name {
-  font-size: 20px;
-  margin-bottom: 5px; }
 
 .project-description {
   font-style: italic; }
@@ -237,8 +265,6 @@ body {
 
 .shot-breakdowns {
   padding-top: .8em;
-  padding-left: 1em;
-  padding-bottom: .3em;
   width: 30em;
   color: #f3f3f5; }
 
@@ -265,7 +291,6 @@ body {
   margin-bottom: 20px; }
 
 .breakdown-wrapper {
-  padding: 0 20px;
   background-color: #324864;
   font-family: "Lovela", sans-serif; }
   .breakdown-wrapper:before {
@@ -287,9 +312,9 @@ body {
   background-size: cover; }
 
 .film-breakdowns {
+  width: 960px;
+  margin: auto;
   padding-top: .8em;
-  padding-left: 1em;
-  padding-bottom: .3em;
   color: #f3f3f5; }
 
 #other {
@@ -327,18 +352,35 @@ body {
   display: inline-block; }
 
 .picture-list {
-  float: left;
+  position: relative;
   height: 20em;
-  width: 25%;
-  min-width: 20em;
-  max-width: 25em;
+  flex: 1 0 25%;
+  max-width: 25%;
   border-right: 1px solid rgba(128, 128, 128, 0.7);
   border-bottom: 1px solid rgba(128, 128, 128, 0.7);
   box-sizing: border-box; }
 
+@media (max-width: 1024px) {
+  .picture-list {
+    flex: 1 0 50%;
+    max-width: 50%; } }
+
+@media (max-width: 640px) {
+  .picture-list {
+    flex: 1 0 100%;
+    max-width: 100%; } }
+
 .video-parent {
   display: flex;
   padding-bottom: 2em; }
+
+.link-link {
+  position: absolute;
+  display: flex;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0; }
 
 .list-video {
   text-align: center;
@@ -352,7 +394,6 @@ body {
 .list-image {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   background-color: #324864;
   border-top: 1px solid #181818;
   border-bottom: 1px solid #181818;
@@ -557,11 +598,11 @@ body {
   position: fixed;
   bottom: 0;
   font-family: Helvetica, sans-serif;
-  font-size: 12px;
-  color: #B8B8B8;
   border-top: 0.1em solid rgba(0, 0, 0, 0.2); }
 
 #bottom-bar p {
+  font-size: 12px;
+  color: #B8B8B8;
   padding-top: .15em;
   padding-left: 1.5em;
   display: inline-block; }

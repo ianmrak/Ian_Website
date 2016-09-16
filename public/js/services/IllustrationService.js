@@ -2,8 +2,6 @@ angular.module('App.IllustrationService', [])
 
 .service('IllustrationService', function() {
   return [{
-    link: '../../assets/bio.jpg'
-  }, {
     link: 'https://ianmrak.graphics/wp-content/uploads/2015/01/Characterlineupbordered.png'
   }, {
     link: 'https://ianmrak.graphics/wp-content/uploads/2015/01/Colorbeatpossibility2facingmadborder.jpg'

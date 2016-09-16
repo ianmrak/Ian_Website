@@ -1,21 +1,27 @@
 #project-wrapper {
   font-family: Helvetica, sans-serif;
-  font-size: 14px;
-  h1 {
-    text-align: center;
-    color: $off-white;
+  font-size: 13px;
+  line-height: 18px;
+  background-color: white;
+  border-top: 1px solid #181818;
+  border-bottom: 1px solid #181818;
+  h2 {
     font-family: $lovelo;
     padding-bottom: 10px;
-    font-size: 34px;
+  }
+  &:before, :after {
+    display: table;
+    content: '';
+  }
+  &:after {
+    clear: both;
   }
 }
 .project-list {
-  display: flex;
-  flex-wrap: wrap;
-  background-color: $portfolio-bg;
-  border-top: 1px solid #181818;
-  border-bottom: 1px solid #181818;
-  &:first-child {
-    margin: 0;
+  margin: auto;
+  width: 960px;
+  &:before {
+    content: '';
+    margin: 18px;
   }
 }
