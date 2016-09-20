@@ -8,3 +8,5 @@ server/account.txt
 .env
 old/
 backup/
+public/assets/image
+public/assets/video
