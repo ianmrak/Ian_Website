@@ -3,7 +3,7 @@ bower_components/
 *.log
 
 build/
-dist/
+public/dist/
 server/account.txt
 .env
 old/

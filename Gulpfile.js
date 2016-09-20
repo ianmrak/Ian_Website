@@ -23,11 +23,11 @@ gulp.task('compile', function(){
           presets: ['es2015']
         }))
         .pipe(concat('concat.js'))
-        .pipe(gulp.dest('dist'))
+        .pipe(gulp.dest('public/dist'))
         .pipe(rename('bundle.js'))
         .pipe(uglify())
         .pipe(sourcemaps.write('./'))
-        .pipe(gulp.dest('dist'));
+        .pipe(gulp.dest('public/dist'));
 });
 
 gulp.task('watch', function() {
