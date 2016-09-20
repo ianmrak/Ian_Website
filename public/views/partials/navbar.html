@@ -1,15 +1,32 @@
 <div class="navbar">
-  <ul>
-    <li><a ui-sref="home"><img src="../../assets/image/mrakulous_icon_s.png"></a></li>
-    <li><a ui-sref="illustrations">Illustration</a></li>
-    <li><a ui-sref="modeling">3D Graphics</a></li>
-    <li><a>Animation</a>
-      <ul>
-        <li id="demo_reel"><a ui-sref="demo_reel">Demo Reel</a></li>
-        <li id="firefly"><a ui-sref="firefly">Firefly</a></li>
-      </ul>
+  <ul id="nav-toggle" class="nav-ul" ng-class="responsive">
+    <li class="icon">
+      <a ui-sref="home"><img src="../../assets/mrakulous_icon_s.png"></a>
     </li>
-    <li><a ui-sref="projects">Projects</a></li>
-    <li><a ui-sref="about">About</a></li>
-  </ul>
+    <li class="toggle">
+      <a
+      href="javascript:void(0);"
+      ng-click="toggle()">&#9776;
+    </a>
+  </li>
+  <li class="nav-end">
+    <a ui-sref="illustrations" ng-click="toggle()">Illustration</a>
+  </li>
+  <li>
+    <a ui-sref="modeling" ng-click="toggle()">3D Graphics</a>
+  </li>
+  <li>
+    <a id="anim-tag">Animation</a>
+    <ul id="anim-items">
+      <li id="demo_reel"><a ui-sref="demo_reel" ng-click="toggle()">Demo Reel</a></li>
+      <li id="firefly"><a ui-sref="firefly" ng-click="toggle()">Firefly</a></li>
+    </ul>
+  </li>
+  <li>
+    <a ui-sref="projects" ng-click="toggle()">Projects</a>
+  </li>
+  <li>
+    <a ui-sref="about" ng-click="toggle()">About</a>
+  </li>
+</ul>
 </div>

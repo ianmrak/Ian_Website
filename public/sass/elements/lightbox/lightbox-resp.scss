@@ -1,0 +1,23 @@
+@media screen and (max-width:900px) {
+  .lightbox-container {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width:640px) {
+
+  .lightbox-btn {
+    display: none;
+  }
+
+  .lightbox-container {
+    width: 95%;
+  }
+
+  .lightbox {
+    img {
+      width: 100%;
+    }
+  }
+
+}

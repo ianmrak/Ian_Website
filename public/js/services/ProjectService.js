@@ -73,7 +73,7 @@ angular.module('App.ProjectService', [])
       deadline: 'Ongoing',
       stack: 'JavaScript, Angular, Node, Express, SASS, Gulp',
       contribution: [
-        'Everything! :)'
+        'Everything!'
       ]
     }
   ];

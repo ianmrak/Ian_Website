@@ -16,9 +16,11 @@
 @import './elements/projects/project';
 
 // == Animation ============= //
-@import './elements/demoreel';
-@import './elements/firefly';
+@import './elements/animation';
 @import './elements/other';
+
+// == Video ================= //
+@import './elements/video-player';
 
 // == Gallery =============== //
 @import './elements/portfolio';
@@ -26,7 +28,9 @@
 // == Lightbox ============== //
 @import './elements/lightbox/wrapper';
 @import './elements/lightbox/lightbox';
+@import './elements/lightbox/lightbox-resp';
 
 // == Elements ============== //
 @import './elements/navbar';
+@import './elements/navbar-resp';
 @import './elements/footer';

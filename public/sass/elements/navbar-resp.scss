@@ -1,0 +1,44 @@
+@media screen and (max-width:730px) {
+  .nav-ul li:not(:first-child) {display: none;}
+  .nav-ul li.toggle {
+    float: right;
+    display: flex;
+  }
+  .nav-ul {
+    padding-left: 0;
+    li a {
+      width: 100%;
+    }
+  }
+  .nav-ul li:hover > ul {
+    position: relative;
+    top: 0;
+  }
+  #anim-items {
+    background-color: #262635;
+    border-radius: 4px;
+    display: inherit;
+    flex-direction: row;
+    width: 100%;
+    li {
+      flex-grow: 1;
+    }
+  }
+}
+
+@media screen and (max-width:730px) {
+  .nav-ul.responsive {position: relative;}
+  .nav-ul.responsive li.toggle {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .nav-ul.responsive li {
+    float: none;
+    display: flex;
+  }
+  .nav-ul.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}

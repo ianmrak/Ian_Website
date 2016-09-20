@@ -25,6 +25,9 @@ angular.module('App.PortfolioAttribute', [])
           if (portfolio.list[i]) {
             portfolio.activeItem = portfolio.list[i];
           }
+          else {
+            i--;
+          }
         }
       }
     }

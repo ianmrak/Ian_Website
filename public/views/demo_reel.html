@@ -1,12 +1,14 @@
   <div class="video-parent">
-    <div class="video">
+    <div class="video playBtn">
       <video
       class="full-vid"
       controls
       poster="../assets/image/Demo_thumb.jpg"
-      ng-click="play($event)">
-        <source src="../assets/video/Demo_Reel.mp4">
+      ng-click="play($event)"
+      ng-src="../assets/video/Demo_Reel.mp4"
+      video-ctrls>
         </video>
+      <div ng-class="playIcon"></div>
       </div>
     </div>
     <div class="breakdown-wrapper">

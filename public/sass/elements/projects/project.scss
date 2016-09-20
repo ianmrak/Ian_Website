@@ -93,3 +93,17 @@
     width: 100%;
   }
 }
+
+
+@media (max-width: 640px) {
+  .project-info {
+    float: none;
+    width: auto;
+  }
+  .well {
+    float: none;
+    width: auto;
+    padding: 20px;
+    margin: 10px auto;
+  }
+}

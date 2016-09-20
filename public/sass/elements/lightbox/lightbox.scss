@@ -17,7 +17,6 @@ $btn-size: 50px;
   color: $off-white;
 }
 .lightbox-btn {
-  position: absolute;
   box-sizing: border-box;
   display: flex;
   align-items: center;
@@ -25,6 +24,7 @@ $btn-size: 50px;
   cursor: pointer;
   height: $btn-size;
   width: $btn-size;
+  min-width: $btn-size;
   background-color: white;
   padding: 15px;
   border-radius: 100%;
@@ -33,10 +33,10 @@ $btn-size: 50px;
   }
 }
 .prev-btn {
-  left: -4em;
+  margin-right: 20px;
 }
 .next-btn {
-  right: -4em;
+  margin-left: 20px;
 }
 .lightbox-vid {
   position:fixed; /* keeps the lightbox window in the current viewport */

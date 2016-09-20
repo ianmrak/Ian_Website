@@ -4,12 +4,15 @@
   <div class="lightbox-container">
     <div class="lightbox-btn prev-btn" ng-click="nextItem(-1)"> << </div>
     <div class="lightbox">
-      <video
-        ng-click="play($event)"
+      <div class="playBtn" ng-if="lightbox.activeItem.isVideo">
+        <video
         class="list-pic"
-        ng-if="lightbox.activeItem.isVideo">
-        <source ng-src="{{ lightbox.activeItem.video }}"></source>
+        ng-src="{{ lightbox.activeItem.video }}"
+        ng-click="play($event)"
+        video-ctrls>
       </video>
+      <div ng-class="playIcon"></div>
+    </div>
     <img ng-if="!lightbox.activeItem.isVideo" ng-src="{{ lightbox.activeItem.image }}">
     <div class="lightbox-title">{{ lightbox.activeItem.title }}</div>
   </div>

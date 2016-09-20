@@ -21,8 +21,15 @@
   background-color: white;
   margin: auto;
   width: 960px;
+  max-width: 100%;
   &:before {
     content: '';
     margin: 18px;
+  }
+}
+
+@media (max-width: 640px) {
+  .project-list {
+    width: auto;
   }
 }

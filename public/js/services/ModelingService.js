@@ -70,12 +70,12 @@ angular.module('App.ModelingService', [])
   },{
     isVideo: true,
     image: `${path}/image/strike_king.jpg`,
-    video: `${path}/video/SK_lure.mp4`,
+    video: `${path}/video/Umbrella.mp4`,
     title: 'Strike King Lure - Ad'
   },{
     isVideo: true,
     image: `${path}/image/Mercer_lure.jpg`,
-    video: `${path}/video/Umbrella.mp4`,
+    video: `${path}/video/SK_lure.mp4`,
     title: 'Umbrella Lure - Ad'
   },{
     isVideo: true,
