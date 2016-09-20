@@ -1,0 +1,19 @@
+$project-item-padding: 10px 20px;
+$off-white: #f3f3f5;
+$main-color: #020E1E;
+$second-color: #788ba5;
+$lovelo: 'Lovela', sans-serif;
+$portfolio-bg: #324864;
+$grey-bar: #1A1A26;
+$nav-border: 0.1em solid rgba(0, 0, 0, 0.2);
+$BS-line-color: #eeeeee;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+}
+body {
+  background: $second-color;
+}

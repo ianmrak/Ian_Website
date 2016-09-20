@@ -1,0 +1,32 @@
+.video {
+  position: relative;
+  margin: auto;
+  display: inline-block;
+  box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, .2);
+}
+
+.playBtn {
+  &:hover {
+    .playIcon {
+      opacity: 1;
+    }
+  }
+}
+.playIcon {
+  background-position: center;
+  transition: opacity 200ms ease-in-out;
+  opacity: 0;
+  pointer-events: none;
+  background-color: rgba(0,0,0,.5);
+  background-image:url("../../assets/playIcon.png");
+  background-repeat:no-repeat;
+  width:100%;
+  height:100%;
+  position:absolute;
+  left:0%;
+  right:0%;
+  top:0%;
+  bottom:0%;
+  margin:auto;
+  background-size:150px;
+}

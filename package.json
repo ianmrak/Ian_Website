@@ -1,0 +1,29 @@
+{
+  "name": "ian-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ianmrak/Ian_Website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ianmrak/Ian_Website/issues"
+  },
+  "homepage": "https://github.com/ianmrak/Ian_Website#readme",
+  "dependencies": {
+    "angular": "^1.5.8",
+    "express": "^4.13.4"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.14.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-sass": "^2.3.2"
+  }
+}

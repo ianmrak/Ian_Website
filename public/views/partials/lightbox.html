@@ -1,0 +1,21 @@
+<div ng-if="lightbox.activeItem" portfolio-ctrls>
+  <div class="lightbox-background" ng-click="resetActiveItem()">
+  </div>
+  <div class="lightbox-container">
+    <div class="lightbox-btn prev-btn" ng-click="nextItem(-1)"> << </div>
+    <div class="lightbox">
+      <div class="playBtn" ng-if="lightbox.activeItem.isVideo">
+        <video
+        class="list-pic"
+        ng-src="{{ lightbox.activeItem.video }}"
+        ng-click="play($event)"
+        video-ctrls>
+      </video>
+      <div ng-class="playIcon"></div>
+    </div>
+    <img ng-if="!lightbox.activeItem.isVideo" ng-src="{{ lightbox.activeItem.image }}">
+    <div class="lightbox-title">{{ lightbox.activeItem.title }}</div>
+  </div>
+  <div class="lightbox-btn next-btn" ng-click="nextItem(1)"> >> </div>
+</div>
+</div>

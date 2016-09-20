@@ -1,0 +1,35 @@
+#project-wrapper {
+  font-family: Helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  border-top: 1px solid #181818;
+  border-bottom: 1px solid #181818;
+  background-color: $off-white;
+  h2 {
+    font-family: $lovelo;
+    padding-bottom: 10px;
+  }
+  &:before, :after {
+    display: table;
+    content: '';
+  }
+  &:after {
+    clear: both;
+  }
+}
+.project-list {
+  background-color: white;
+  margin: auto;
+  width: 960px;
+  max-width: 100%;
+  &:before {
+    content: '';
+    margin: 18px;
+  }
+}
+
+@media (max-width: 640px) {
+  .project-list {
+    width: auto;
+  }
+}

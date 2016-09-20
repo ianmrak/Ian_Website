@@ -1,0 +1,43 @@
+<div id="project-wrapper">
+  <div class="project-list">
+    <div class="project-panel" ng-repeat="project in projects">
+      <div class="project">
+        <div class="project-info">
+          <h2>{{ project.name }}</h2>
+          <span class="project-description">{{ project.desc }}</span>
+          <span><strong>Contribution:</strong></span>
+          <ul>
+            <li ng-repeat="contribution in project.contribution" class="project-contribution">{{ contribution }}</li>
+          </ul>
+        </div>
+        <div class="well">
+          <table>
+            <tbody>
+              <tr>
+                <td>Team: </td>
+                <td>{{ project.team }}</td>
+              </tr>
+              <tr>
+                <td>Stack: </td>
+                <td>{{ project.stack }}</td>
+              </tr>
+              <tr>
+                <td>Deadline: </td>
+                <td>{{ project.deadline }}</td>
+              </tr>
+              <tr>
+                <td>Project: </td>
+                <td><a href="{{ project.link }}" target="_blank">{{ prettyUrl(project.link) }}</a></td>
+              </tr>
+              <tr>
+                <td>Github: </td>
+                <td><a href="{{ project.github }}" target="_blank">{{ prettyUrl(project.github) }}</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <hr>
+    </div>
+  </div>
+</div>

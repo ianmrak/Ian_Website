@@ -1,0 +1,109 @@
+.project-panel {
+  position: relative;
+  margin-bottom: 5px;
+}
+.project {
+  padding: $project-item-padding;
+  margin: auto;
+  box-sizing: border-box;
+  background-color: white;
+  transition-duration: 100ms;
+  border-radius: 8px;
+  &:before, :after {
+    display: table;
+    content: '';
+  }
+  &:after {
+    clear: both;
+  }
+  &:hover {
+    background-color: #fbfbfb;
+  }
+  span {
+    margin-top: 10px;
+  }
+}
+.well {
+  float: left;
+  background-color: #f5f5f5;
+  width: 380px;
+  padding: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+  table {
+    border-spacing: 10px 0px;
+  }
+}
+.project-link {
+  text-decoration: none;
+  color: black;
+}
+.project-info {
+  float: left;
+  width: 460px;
+  ul {
+    padding-left: 1em;
+  }
+}
+.project-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 150px;
+  right: 0;
+  top: 0;
+  box-sizing: border-box;
+  padding: 10px;
+  position: absolute;
+  opacity: .8;
+  img {
+    max-width: 100%;
+    max-height: 90%;
+  }
+}
+.project-title {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid gray;
+}
+.project-description {
+  font-style: italic;
+}
+.project-contribution {
+  margin-top: 5px;
+  list-style-type: none;
+  &:before {
+    content: '- ';
+  }
+}
+.project-github {
+  margin-left: 10px;
+  width: 30px;
+  border-radius: 100%;
+}
+.github-link {
+  width: 30px;
+  display: flex;
+  align-items: center;
+  img {
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 640px) {
+  .project-info {
+    float: none;
+    width: auto;
+  }
+  .well {
+    float: none;
+    width: auto;
+    padding: 20px;
+    margin: 10px auto;
+  }
+}
