@@ -860,10 +860,12 @@ angular.module("mySite", ['ui.router',
   }).state('illustrations', {
     url: '/illustrations',
     controller: 'IllustrationController',
+    controllerAs: 'p',
     templateUrl: 'views/portfolio.html'
   }).state('modeling', {
     url: '/modeling',
     controller: 'ModelingController',
+    controllerAs: 'p',
     templateUrl: 'views/portfolio.html'
   }).state('projects', {
     url: '/projects',
@@ -887,13 +889,15 @@ angular.module('App.ActiveItemController', []).controller('ActiveItemController'
 }]);
 'use strict';
 
-angular.module('App.IllustrationController', []).controller('IllustrationController', ['$scope', 'IllustrationService', function ($scope, illustrations) {
-  $scope.items = illustrations;
+angular.module('App.IllustrationController', []).controller('IllustrationController', ['IllustrationService', function (illustrations) {
+  var list = this;
+  list.items = illustrations;
 }]);
 'use strict';
 
 angular.module('App.ModelingController', []).controller('ModelingController', ['$scope', 'ModelingService', function ($scope, models) {
-  $scope.items = models;
+  var list = this;
+  list.items = models;
 }]);
 'use strict';
 
@@ -1131,7 +1135,7 @@ angular.module('App.ProjectService', []).factory('ProjectService', [function () 
     stack: 'JavaScript, jQuery',
     contribution: ['Produced with Angular and Express for flexible development and expansion', 'Designed control schema to enable a targeted narrative while limiting navigation overhead', 'Implemented ability to render slide data from local data sources']
   }, {
-    name: 'This website!',
+    name: 'This website',
     desc: 'A personal website for my software engineering and design projects',
     link: 'https://ianmrak.graphics',
     github: 'https://github.com/ianmrak/personal_website',
@@ -1239,10 +1243,6 @@ angular.module('App.NavbarElement', []).directive('navigation', function () {
         } else {
           $scope.responsive = "";
         }
-      };
-
-      $scope.collapse = function () {
-        console.log('got here!');
       };
     }
   };

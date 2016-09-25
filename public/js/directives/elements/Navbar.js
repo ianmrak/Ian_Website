@@ -14,10 +14,6 @@ angular.module('App.NavbarElement', [])
           $scope.responsive = "";
         }
       }
-
-      $scope.collapse = function() {
-        console.log('got here!');
-      }
     }
   };
 });

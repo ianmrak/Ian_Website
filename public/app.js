@@ -33,11 +33,13 @@ angular.module("mySite",
   .state('illustrations', {
     url: '/illustrations',
     controller: 'IllustrationController',
+    controllerAs: 'p',
     templateUrl: 'views/portfolio.html'
   })
   .state('modeling', {
     url: '/modeling',
     controller: 'ModelingController',
+    controllerAs: 'p',
     templateUrl: 'views/portfolio.html'
   })
   .state('projects', {

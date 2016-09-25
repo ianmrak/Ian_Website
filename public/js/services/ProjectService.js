@@ -65,7 +65,7 @@ angular.module('App.ProjectService', [])
       ]
     },
     {
-      name: 'This website!',
+      name: 'This website',
       desc: 'A personal website for my software engineering and design projects',
       link: 'https://ianmrak.graphics',
       github: 'https://github.com/ianmrak/personal_website',
