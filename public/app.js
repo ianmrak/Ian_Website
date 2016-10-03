@@ -1,27 +1,4 @@
-angular.module("mySite",
-[
-  'ui.router',
-  // Controllers
-  'App.IllustrationController',
-  'App.ProjectController',
-  'App.ModelingController',
-  'App.ResumeController',
-  'App.ActiveItemController',
-  // Services
-  'App.IllustrationService',
-  'App.ProjectService',
-  'App.ModelingService',
-  'App.PortfolioService',
-  // Elements
-  'App.ResumeElement',
-  'App.LightboxElement',
-  'App.BioElement',
-  'App.NavbarElement',
-  'App.FooterElement',
-  // Attributes
-  'App.PortfolioAttribute',
-  'App.VideoAttribute'
-])
+angular.module("mySite", ['ui.router'])
 
 .config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
   $urlRouterProvider.otherwise('home');
@@ -32,15 +9,27 @@ angular.module("mySite",
   })
   .state('illustrations', {
     url: '/illustrations',
-    controller: 'IllustrationController',
-    controllerAs: 'p',
-    templateUrl: 'views/portfolio.html'
+    templateUrl: 'views/portfolio.html',
+    controller: 'PortfolioController',
+    controllerAs: 'vm',
+    resolve: {
+      items: ['IllustrationService',
+      function(illustrations) {
+        return illustrations;
+      }]
+    }
   })
   .state('modeling', {
     url: '/modeling',
-    controller: 'ModelingController',
-    controllerAs: 'p',
-    templateUrl: 'views/portfolio.html'
+    templateUrl: 'views/portfolio.html',
+    controller: 'PortfolioController',
+    controllerAs: 'vm',
+    resolve: {
+      items: ['ModelingService',
+      function(models) {
+        return models;
+      }]
+    }
   })
   .state('projects', {
     url: '/projects',
@@ -53,7 +42,7 @@ angular.module("mySite",
   })
   .state('demo_reel', {
     url: '/demo_reel',
-    templateUrl: 'views/demo_reel.html'
+    template: '<demo-reel>'
   })
   .state('firefly', {
     url: '/firefly',

@@ -1,5 +1,7 @@
-angular.module('App.ProjectController', [])
+(function() {
+  'use strict';
 
+angular.module("mySite")
 .controller('ProjectController', ['$scope', 'ProjectService', function($scope, pService) {
   $scope.projects = pService.projects;
   $scope.gitIcon = pService.gitIcon;
@@ -7,3 +9,5 @@ angular.module('App.ProjectController', [])
     return url.replace(/.*?:\/\//g, "");
   }
 }])
+
+})();

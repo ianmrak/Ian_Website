@@ -17,13 +17,13 @@
       </div>
       <div class="row">
         <div class="shot-breakdowns">
-
-          <h3 class="breakdown-header">Shot 1 - Firefly Scene</h3>
+          <div ng-repeat="shot in vm.shots">
+          <h3 class="breakdown-header">{{ shot.title }}</h3>
           <ul class="breakdown-ul">
-            <li class="breakdown-list">Scene from Thesis short film.</li>
-            <li class="breakdown-list">Contribution: All done by myself.</li>
+            <li class="breakdown-list" ng-repeat="note in shot.notes">{{ note }}</li>
           </ul>
-          <h3 class="breakdown-header">Shot 2 - Dialogue Scene</h3>
+        </div>
+          <!-- <h3 class="breakdown-header">Shot 2 - Dialogue Scene</h3>
           <ul class="breakdown-ul">
             <li class="breakdown-list">Dialogue and lip-sync exercise.</li>
             <li class="breakdown-list">Contribution: Animation, Scene Setup, and Rendering</li>
@@ -121,7 +121,7 @@
         <ul class="breakdown-ul">
           <li class="breakdown-list">Scene from Thesis short film.</li>
           <li class="breakdown-list">Contribution: All done by myself</li>
-        </ul>
+        </ul> -->
       </div>
     </div>
   </div>

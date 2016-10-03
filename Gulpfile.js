@@ -14,8 +14,8 @@ gulp.task('styles', function() {
 
 gulp.task('compile', function(){
     return gulp.src([
-      'public/lib/angular.min.js',
-      'public/lib/angular-ui-router.min.js',
+      // 'public/lib/angular.min.js',
+      // 'public/lib/angular-ui-router.min.js',
       'public/app.js',
       'public/js/**/*.js'])
         .pipe(sourcemaps.init())

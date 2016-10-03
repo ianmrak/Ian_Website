@@ -1,15 +1,19 @@
-angular.module('App.PortfolioAttribute', [])
+(function() {
+  'use strict'
 
-.directive('portfolioCtrls',
-[
-  '$state',
-  'PortfolioService',
-  'IllustrationService',
-  'ModelingService',
-  function($state, portfolio, illustrations, models) {
+  angular.module("mySite")
+  .directive('portfolioCtrls',
+  [
+    '$state',
+    'PortfolioService',
+    'IllustrationService',
+    'ModelingService',
+    portfolioCtrls
+  ]);
+
+  function portfolioCtrls($state, portfolio, illustrations, models) {
     return {
       link: function($scope, e, attr) {
-
         $scope.setActiveItem = function(e, item, index) {
           e.preventDefault();
           portfolio.index = index;
@@ -31,5 +35,6 @@ angular.module('App.PortfolioAttribute', [])
         }
       }
     }
+  }
 
-  }]);
+})();
